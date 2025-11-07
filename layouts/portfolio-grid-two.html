@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from shreethemes.in/bizcell/layouts/portfolio-grid-two.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Nov 2025 11:53:04 GMT -->
+<head>
+    <meta charset="utf-8" />
+    <title>Bizcell - Landing Page Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Bootstrap 5 Landing Page Template" />
+    <meta name="keywords" content="bootstrap 5, premium, marketing, multipurpose" />
+    <meta name="author" content="Shreethemes" />
+    <meta name="website" content="https://shreethemes.in/" />
+    <meta name="email" content="support@shreethemes.in" />
+    <meta name="version" content="1.0.0" />
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- BOOTSTRAP -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- ICON -->
+    <link href="css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="../../../unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet">
+    <!-- SLIDER -->
+    <link rel="stylesheet" href="css/tiny-slider.css">
+    <link rel="stylesheet" href="css/tobii.min.css">
+    <!-- Custom Css -->
+    <link href="css/style.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+</head>
+
+<body>
+    <!-- <div id="preloader">
+        <div id="status">
+            <div class="spinner">
+                <div class="cube1"></div>
+                <div class="cube2"></div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Navbar STart -->
+    <header id="topnav" class="defaultscroll sticky">
+        <div class="container">
+            <!-- Logo container-->
+            <a class="logo" href="index.html">
+                <img src="images/logo-dark.png" class="logo-light-mode" alt="">
+                <img src="images/logo-light.png" class="logo-dark-mode" alt="">
+            </a>
+            <!-- End Logo container-->
+            <div class="menu-extras">
+                <div class="menu-item">
+                    <!-- Mobile menu toggle-->
+                    <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                        <div class="lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                    <!-- End mobile menu toggle-->
+                </div>
+            </div>
+
+            <ul class="buy-button list-inline mb-0">
+                <li class="list-inline-item search-icon mb-0">
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-link text-decoration-none dropdown-toggle mb-0 p-0"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="uil uil-search h5 text-dark mb-0"></i>
+                        </button>
+                        <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow rounded border-0 mt-4 py-0"
+                            style="width: 300px;">
+                            <form class="p-4">
+                                <input type="text" id="text" name="name" class="form-control border bg-white"
+                                    placeholder="Search...">
+                            </form>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <div id="navigation">
+                <!-- Navigation Menu-->
+                <ul class="navigation-menu nav-right">
+                    <li class="has-submenu parent-parent-menu-item">
+                        <a href="javascript:void(0)">Home</a><span class="menu-arrow"></span>
+                        <ul class="submenu">
+                            <li>
+                                <ul>
+                                    <li>
+                                        <a href="index.html" class="sub-menu-item">
+                                            Home
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index-two.html" class="sub-menu-item">
+                                            Home two
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index-three.html" class="sub-menu-item">
+                                            Home three
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index-four.html" class="sub-menu-item">
+                                            Home four
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="index-five.html" class="sub-menu-item">
+                                            Home five
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index-six.html" class="sub-menu-item">
+                                            Home six
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index-seven.html" class="sub-menu-item">
+                                            Home seven
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="index-onepage.html" class="sub-menu-item">
+                                            Home onepage
+                                        </a>
+                                    </li>
+
+
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="page-about.html" class="sub-menu-item">About Us</a></li>
+                    <li class="has-submenu parent-parent-menu-item">
+                        <a href="javascript:void(0)">Pages</a><span class="menu-arrow"></span>
+                        <ul class="submenu">
+                            <li class="has-submenu parent-menu-item"><a href="javascript:void(0)">Services</a><span
+                                    class="submenu-arrow"></span>
+                                <ul class="submenu">
+                                    <li><a href="page-service-one.html" class="sub-menu-item">Services One</a></li>
+                                    <li><a href="page-service-two.html" class="sub-menu-item">Service Two</a></li>
+                                    <li><a href="page-service-three.html" class="sub-menu-item">Service Three</a></li>
+                                    <li><a href="page-service-detail.html" class="sub-menu-item">Service Detail </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu parent-menu-item"><a href="javascript:void(0)">Team</a><span
+                                    class="submenu-arrow"></span>
+                                <ul class="submenu">
+                                    <li><a href="page-team.html" class="sub-menu-item">Team One</a></li>
+                                    <li><a href="page-team-two.html" class="sub-menu-item">Team Two</a></li>
+                                    <li><a href="page-team-three.html" class="sub-menu-item">Team Three</a></li>
+                                    <li><a href="page-team-detail.html" class="sub-menu-item">Team Detail </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="page-features.html" class="sub-menu-item">Features</a></li>
+                            <li><a href="page-faq.html" class="sub-menu-item">FAQs</a></li>
+                            <li><a href="page-pricing.html" class="sub-menu-item">Pricing</a></li>
+                            <li><a href="page-request.html" class="sub-menu-item">Request</a></li>
+                            
+
+                            <li class="has-submenu parent-menu-item"><a href="javascript:void(0)">User Pages</a><span
+                                    class="submenu-arrow"></span>
+                                <ul class="submenu">
+                                    <li><a href="page-login.html" class="sub-menu-item"> Login Page</a></li>
+                                    <li><a href="page-signup.html" class="sub-menu-item"> Signup Page</a></li>
+                                    <li><a href="page-forgotpassword.html" class="sub-menu-item"> Forgot Password</a>
+                                    </li>
+                                    <li><a href="page-thankyou.html" class="sub-menu-item">Thank You</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="page-comingsoon.html" class="sub-menu-item">Coming Soon</a></li>
+                            <li><a href="page-404.html" class="sub-menu-item">404 Error</a></li>
+                            <li><a href="page-components.html" class="sub-menu-item">Components</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="has-submenu parent-parent-menu-item">
+                        <a href="javascript:void(0)">Portfolio</a><span class="menu-arrow"></span>
+                        <ul class="submenu megamenu">
+                            <li>
+                                <ul>
+                                    <li class="megamenu-head">Grid Portfolio</li>
+                                    <li><a href="portfolio-grid-two.html" class="sub-menu-item">Two Column</a></li>
+                                    <li><a href="portfolio-grid-three.html" class="sub-menu-item">Three Column</a></li>
+                                    <li><a href="portfolio-grid-four.html" class="sub-menu-item">Four Column</a></li>
+                                    <li><a href="portfolio-grid-five.html" class="sub-menu-item">Five Column</a></li>
+                                    <li><a href="portfolio-grid-six.html" class="sub-menu-item">Six Column</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li class="megamenu-head">Modern Portfolio</li>
+                                    <li><a href="portfolio-modern-two.html" class="sub-menu-item">Two Column</a></li>
+                                    <li><a href="portfolio-modern-three.html" class="sub-menu-item">Three Column</a>
+                                    </li>
+                                    <li><a href="portfolio-modern-four.html" class="sub-menu-item">Four Column</a></li>
+                                    <li><a href="portfolio-modern-five.html" class="sub-menu-item">Five Column</a></li>
+                                    <li><a href="portfolio-modern-six.html" class="sub-menu-item">Six Column</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li class="megamenu-head">Masonry Portfolio</li>
+                                    <li><a href="portfolio-masonry-two.html" class="sub-menu-item">Two Column</a></li>
+                                    <li><a href="portfolio-masonry-three.html" class="sub-menu-item">Three Column</a>
+                                    </li>
+                                    <li><a href="portfolio-masonry-four.html" class="sub-menu-item">Four Column</a></li>
+                                    <li><a href="portfolio-masonry-five.html" class="sub-menu-item">Five Column</a></li>
+                                    <li><a href="portfolio-masonry-six.html" class="sub-menu-item">Six Column</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <ul>
+                                    <li class="megamenu-head">Standard Portfolio</li>
+                                    <li><a href="portfolio-st-two.html" class="sub-menu-item">Two Column</a></li>
+                                    <li><a href="portfolio-st-three.html" class="sub-menu-item">Three Column</a></li>
+                                    <li><a href="portfolio-st-four.html" class="sub-menu-item">Four Column</a></li>
+                                    <li><a href="portfolio-st-five.html" class="sub-menu-item">Five Column</a></li>
+                                    <li><a href="portfolio-st-six.html" class="sub-menu-item">Six Column</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul>
+                                    <li class="megamenu-head">Portfolio Deatils</li>
+                                    <li><a href="portfolio-one.html" class="sub-menu-item"> Portfolio One</a></li>
+                                    <li><a href="portfolio-two.html" class="sub-menu-item"> Portfolio Two</a></li>
+                                    <li><a href="portfolio-three.html" class="sub-menu-item"> Portfolio Three</a></li>
+                                    <li><a href="portfolio-four.html" class="sub-menu-item"> Portfolio Four</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="has-submenu parent-parent-menu-item">
+                        <a href="javascript:void(0)">Blogs</a><span class="menu-arrow"></span>
+                        <ul class="submenu">
+                            <li><a href="blog-two-column.html" class="sub-menu-item">Blog 2 column</a></li>
+                            <li><a href="blog-three-column.html" class="sub-menu-item">Blog 3 column</a></li>
+                            <li><a href="blog-leftsidebar.html" class="sub-menu-item">Left Sidebar</a></li>
+                            <li><a href="blog-rightsidebar.html" class="sub-menu-item">Right Sidebar</a></li>
+                            <li><a href="blog-fullwidth.html" class="sub-menu-item">Full width</a></li>
+                            <li><a href="blog-detail.html" class="sub-menu-item"> Blog detail</a></li>
+                            <li><a href="blog-author.html" class="sub-menu-item">Author</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="has-submenu parent-menu-item"><a href="javascript:void(0)">Contact</a><span
+                            class="submenu-arrow"></span>
+                        <ul class="submenu">
+                            <li><a href="page-contact-one.html" class="sub-menu-item">Contact One</a></li>
+                            <li><a href="page-contact-two.html" class="sub-menu-item">Contact Two</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--end navigation menu-->
+            </div>
+            <!--end navigation-->
+        </div>
+        <!--end container-->
+    </header>
+    <!--end header-->
+    <!-- Navbar End -->
+
+    <!-- Start Home -->
+    <section class="bg-default page-next-level" style="background: url(images/bg/bg-page.png) center no-repeat;">
+        <div class="home-center">
+            <div class="home-desc-center">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-12">
+                            <div class="text-center">
+                                <h3 class="title-pager mb-0"> Portfolio two column </h3>
+                            </div>
+                            <ul class="page-next text-center mt-4 pt-2">
+                                <li><a href="index.html" class="text-dark fs-6 fw-normal">Home</a></li>
+                                <li><a href="#" class="text-dark fs-6 fw-normal">Portfolio</a></li>
+                                <li><a href="#" class="text-dark fs-6 fw-normal">Grid Portfolio</a></li>
+                                <li>
+                                    <span class="text-primary fs-6 fw-normal">Two column</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--end col-->
+
+                    </div>
+                    <!--end row-->
+                </div>
+                <!--end container-->
+            </div>
+        </div>
+    </section>
+    <!--end section-->
+    <!-- End Home -->
+
+    <!-- Start Work -->
+    <section class="section" id="portfolio">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 my-4 filters-group-wrap text-center">
+                    <div class="filters-group">
+                        <ul class="container-filter mb-0 categories-filter list-unstyled filter-options h6">
+                            <li class="filter-list list-inline-item categories fw-normal position-relative active"
+                                data-group="all">All</li>
+                            <li class="filter-list list-inline-item categories fw-normal position-relative"
+                                data-group="finance">Finance</li>
+                            <li class="filter-list list-inline-item categories fw-normal position-relative"
+                                data-group="accounting">Accounting</li>
+                            <li class="filter-list list-inline-item categories fw-normal position-relative"
+                                data-group="research">Research</li>
+                            <li class="filter-list list-inline-item categories fw-normal position-relative"
+                                data-group="startup">Startup</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+
+            <div id="grid" class="row g-3 row-cols-lg-2 row-cols-md-2 row-cols-sm-2 row-cols-1">
+                <div class="col picture-item" data-groups='["finance"]'>
+                    <div class="position-relative portfolio-primary overflow-hidden">
+                        <div class="rounded position-relative port-image overflow-hidden">
+                            <img src="images/portfolio/01.jpg" class="img-fluid shadow" alt="work-image">
+                            <div class="overlay-work"></div>
+                            <div class="work-content">
+                                <h5 class="work-title mb-1"><a href="portfolio-detail.html" class="text-light">Paper and
+                                        Pen</a></h5>
+                                <span class="text-white-50">Finance</span>
+
+                            </div>
+                            <div class="icon">
+                                <a href="images/portfolio/01.jpg" class="lightbox text-white"><i
+                                        class="mdi mdi-camera h5"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col picture-item" data-groups='["accounting"]'>
+                    <div class="position-relative portfolio-primary overflow-hidden">
+                        <div class="rounded position-relative port-image overflow-hidden">
+                            <img src="images/portfolio/02.jpg" class="img-fluid shadow" alt="work-image">
+                            <div class="overlay-work"></div>
+                            <div class="work-content">
+                                <h5 class="work-title mb-1"><a href="portfolio-detail.html" class="text-light">Flower
+                                        Pot</a>
+                                </h5>
+                                <span class="text-white-50">Accounting</span>
+
+                            </div>
+                            <div class="icon">
+                                <a href="images/portfolio/02.jpg" class="lightbox text-white"><i
+                                        class="mdi mdi-camera h5"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col picture-item" data-groups='["finance"]'>
+                    <div class="position-relative portfolio-primary overflow-hidden">
+                        <div class="rounded position-relative port-image overflow-hidden">
+                            <img src="images/portfolio/03.jpg" class="img-fluid shadow" alt="work-image">
+                            <div class="overlay-work"></div>
+                            <div class="work-content">
+                                <h5 class="work-title mb-1"><a href="portfolio-detail.html" class="text-light">Pen
+                                        box</a>
+                                </h5>
+                                <span class="text-white-50">Finance</span>
+
+                            </div>
+                            <div class="icon">
+                                <a href="images/portfolio/03.jpg" class="lightbox text-white"><i
+                                        class="mdi mdi-camera h5"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col picture-item" data-groups='["accounting"]'>
+                    <div class="position-relative portfolio-primary overflow-hidden">
+                        <div class="rounded position-relative port-image overflow-hidden">
+                            <img src="images/portfolio/04.jpg" class="img-fluid shadow" alt="work-image">
+                            <div class="overlay-work"></div>
+                            <div class="work-content">
+                                <h5 class="work-title mb-1"><a href="portfolio-detail.html" class="text-light">Fresh
+                                        Fruits</a></h5>
+                                <span class="text-white-50">Accounting</span>
+                            </div>
+                            <div class="icon">
+                                <a href="images/portfolio/04.jpg" class="lightbox text-white"><i
+                                        class="mdi mdi-camera h5"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col picture-item" data-groups='["research"]'>
+                    <div class="position-relative portfolio-primary overflow-hidden">
+                        <div class="rounded position-relative port-image overflow-hidden">
+                            <img src="images/portfolio/05.jpg" class="img-fluid shadow" alt="work-image">
+                            <div class="overlay-work"></div>
+                            <div class="work-content">
+                                <h5 class="work-title mb-1"><a href="portfolio-detail.html" class="text-light">Table and
+                                        Frame</a></h5>
+                                <span class="text-white-50">Research</span>
+                            </div>
+                            <div class="icon">
+                                <a href="images/portfolio/05.jpg" class="lightbox text-white"><i
+                                        class="mdi mdi-camera h5"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col picture-item" data-groups='["startup"]'>
+                    <div class="position-relative portfolio-primary overflow-hidden">
+                        <div class="rounded position-relative port-image overflow-hidden">
+                            <img src="images/portfolio/06.jpg" class="img-fluid shadow" alt="work-image">
+                            <div class="overlay-work"></div>
+                            <div class="work-content">
+                                <h5 class="work-title mb-1"><a href="portfolio-detail.html" class="text-light">Flowers
+                                        with Water</a></h5>
+                                <span class="text-white-50">Startup</span>
+                            </div>
+                            <div class="icon">
+                                <a href="images/portfolio/06.jpg" class="lightbox text-white"><i
+                                        class="mdi mdi-camera h5"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!-- end row -->
+            <!-- PAGINATION START -->
+            <div class="row">
+                <div class="col-12 mt-4 pt-2">
+                    <ul class="pagination justify-content-center mb-0">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true"><i class="mdi mdi-chevron-left mdi-18px"></i></span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link active" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true"><i class="mdi mdi-chevron-right mdi-18px"></i></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!--end pagination-->
+                </div>
+                <!--end col-->
+            </div>
+            <!-- end row -->
+            <!-- PAGINATION END -->
+        </div>
+        <!--end container-->
+    </section>
+    <!--end section-->
+    <!-- End work -->
+
+    <!-- Partner Start -->
+    <section class="section-two bg-light">
+        <div class="page-triangle"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="tiny-five-item">
+                        <div class="tiny-slide">
+                            <img src="images/testi/01.png" class="img-fluid mx-auto d-block" alt="clients">
+                        </div>
+                        <div class="tiny-slide">
+                            <img src="images/testi/02.png" class="img-fluid mx-auto d-block" alt="clients">
+                        </div>
+                        <div class="tiny-slide">
+                            <img src="images/testi/02.png" class="img-fluid mx-auto d-block" alt="clients">
+                        </div>
+                        <div class="tiny-slide">
+                            <img src="images/testi/03.png" class="img-fluid mx-auto d-block" alt="clients">
+                        </div>
+                        <div class="tiny-slide">
+                            <img src="images/testi/04.png" class="img-fluid mx-auto d-block" alt="clients">
+                        </div>
+                        <div class="tiny-slide">
+                            <img src="images/testi/05.png" class="img-fluid mx-auto d-block" alt="clients">
+                        </div>
+                        <div class="tiny-slide">
+                            <img src="images/testi/06.png" class="img-fluid mx-auto d-block" alt="clients">
+                        </div>
+                        <div class="tiny-slide">
+                            <img src="images/testi/07.png" class="img-fluid mx-auto d-block" alt="clients">
+                        </div>
+                        <div class="tiny-slide">
+                            <img src="images/testi/08.png" class="img-fluid mx-auto d-block" alt="clients">
+                        </div>
+                        <div class="tiny-slide">
+                            <img src="images/testi/09.png" class="img-fluid mx-auto d-block" alt="clients">
+                        </div>
+                        <div class="tiny-slide">
+                            <img src="images/testi/10.png" class="img-fluid mx-auto d-block" alt="clients">
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--enn container-->
+    </section>
+    <!--end section-->
+    <!-- Partner End -->
+
+    <!-- Footer Start -->
+    <footer class="footer bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                    <a href="#" class="logo-footer">
+                        <img src="images/logo-light.png" height="24" alt="">
+                    </a>
+                    <p class="mt-4 text-white-50">Using this template you can make beautiful landing pages without any
+                        major hardwork.</p>
+                    <div class="mt-3">
+                        <ul class="list-unstyled footer-icon social mb-0">
+                            <li class="list-inline-item mb-0"><a href="#" class="rounded icon-sm"><i
+                                        data-feather="facebook" class="fea icon-sm"></i></a></li>
+                            <li class="list-inline-item mb-0"><a href="#" class="rounded icon-sm"><i
+                                        data-feather="instagram" class="fea icon-sm"></i></a></li>
+                            <li class="list-inline-item mb-0"><a href="#" class="rounded icon-sm"><i
+                                        data-feather="twitter" class="fea icon-sm"></i></a></li>
+                            <li class="list-inline-item mb-0"><a href="#" class="rounded icon-sm"><i
+                                        data-feather="linkedin" class="fea icon-sm"></i></a></li>
+                            <li class="list-inline-item mb-0"><a href="#" class="rounded icon-sm"><i
+                                        data-feather="dribbble" class="fea icon-sm"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <h4 class="text-light footer-head">Company</h4>
+                    <ul class="list-unstyled footer-list mt-4">
+                        <li><a href="#" class="text-foot fs-6"><i class="mdi mdi-chevron-right"></i> Aboutus</a></li>
+                        <li><a href="#" class="text-foot fs-6"><i class="mdi mdi-chevron-right"></i> Services</a></li>
+                        <li><a href="#" class="text-foot fs-6"><i class="mdi mdi-chevron-right"></i> Team</a></li>
+                        <li><a href="#" class="text-foot fs-6"><i class="mdi mdi-chevron-right"></i> Pricing</a></li>
+                        <li><a href="#" class="text-foot fs-6"><i class="mdi mdi-chevron-right"></i> Features</a></li>
+                    </ul>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <h4 class="text-light footer-head">Usefull Links</h4>
+                    <ul class="list-unstyled footer-list mt-4">
+                        <li><a href="#" class="text-foot fs-6"><i class="mdi mdi-chevron-right"></i> Privacy
+                                Protection</a></li>
+                        <li><a href="#" class="text-foot fs-6"><i class="mdi mdi-chevron-right"></i> Safe Payments</a>
+                        </li>
+                        <li><a href="#" class="text-foot fs-6"><i class="mdi mdi-chevron-right"></i> Terms of
+                                Services</a></li>
+                        <li><a href="#" class="text-foot fs-6"><i class="mdi mdi-chevron-right"></i> Documentation</a>
+                        </li>
+                        <li><a href="#" class="text-foot fs-6"><i class="mdi mdi-chevron-right"></i> Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--end col-->
+
+                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <h4 class="text-light fw-normal footer-head mb-4">Bizcell Store</h4>
+                    <ul class="list-unstyled footer-list">
+                        <li class="fs-6"><i class="mdi mdi-map-marker me-2"></i> 3/2/64 Mongus Street, UK</li>
+                        <li class="fs-6"><i class="mdi mdi-email me-2"></i> name@domain.com</li>
+                        <li class="fs-6"><i class="mdi mdi-phone me-2"></i> +(125) 215-4561</li>
+                        <li class="fs-6"><i class="mdi mdi-earth me-2"></i> www.yourdomain.com</li>
+                        <li class="fs-6"><i class="mdi mdi-twitter me-2"></i> yourname_tweet</li>
+                    </ul>
+
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </footer>
+    <!--end footer-->
+
+    <footer class="footer footer-bar bg-dark border-top">
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <div class="text-sm-start">
+                        <p class="mb-0">© <script>
+                                document.write(new Date().getFullYear())
+                            </script> Bizcell. Design with <i class="mdi mdi-heart text-danger"></i> by <a
+                                href="https://shreethemes.in/" target="_blank" class="text-reset">Shreethemes</a>.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <ul class="list-unstyled text-sm-end mb-0">
+                        <li class="list-inline-item"><a href="javascript:void(0)"><img
+                                    src="images/footer/american-ex.png" class="avatar avatar-ex-sm"
+                                    title="American Express" alt=""></a></li>
+                        <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/footer/discover.png"
+                                    class="avatar avatar-ex-sm" title="Discover" alt=""></a></li>
+                        <li class="list-inline-item"><a href="javascript:void(0)"><img
+                                    src="images/footer/master-card.png" class="avatar avatar-ex-sm" title="Master Card"
+                                    alt=""></a></li>
+                        <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/footer/paypal.png"
+                                    class="avatar avatar-ex-sm" title="Paypal" alt=""></a></li>
+                        <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/footer/visa.png"
+                                    class="avatar avatar-ex-sm" title="Visa" alt=""></a></li>
+                    </ul>
+                </div>
+                <!--end col-->
+
+
+            </div>
+        </div>
+        <!--end container-->
+    </footer>
+    <!--end footer-->
+    <!-- Footer End -->
+
+    <!-- Style switcher -->
+    <div id="style-switcher" class="bg-light border p-3 pt-2 pb-2" onclick="toggleSwitcher()">
+        <div>
+            <h6 class="title text-center">Select Your Color</h6>
+            <ul class="pattern">
+                <li class="list-inline-item">
+                    <a class="color1" href="javascript: void(0);" onclick="setColor('default')"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="color2" href="javascript: void(0);" onclick="setColor('blue')"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="color3" href="javascript: void(0);" onclick="setColor('yellow')"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="color4" href="javascript: void(0);" onclick="setColor('dark-pink')"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="color5" href="javascript: void(0);" onclick="setColor('orange')"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="color6" href="javascript: void(0);" onclick="setColor('brown')"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="color7" href="javascript: void(0);" onclick="setColor('green')"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="color8" href="javascript: void(0);" onclick="setColor('purple')"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="color9" href="javascript: void(0);" onclick="setColor('firozi')"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="bottom">
+            <a href="javascript: void(0);" class="settings bg-white shadow d-block"><i
+                    class="mdi mdi-cog ms-1 mdi-24px position-absolute mdi-spin text-primary"></i></a>
+        </div>
+    </div>
+    <!-- end Style switcher -->
+
+    <!-- Back to top -->
+    <a href="#" class="back-to-top rounded-pill text-center" id="back-to-top">
+        <i class="mdi mdi-chevron-up d-block"> </i>
+    </a>
+    <!-- Back to top -->
+
+    <!-- javascript -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Portfolio -->
+    <script src="js/shuffle.min.js"></script>
+    <script src="js/tobii.min.js"></script>
+    <!-- Slider -->
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/tiny-slider-init.js"></script>
+    <!-- Switcher -->
+    <script src="js/switcher.js"></script>
+    <script src="js/feather.min.js"></script>
+    <!-- Main Js -->
+    <script src="js/plugins.init.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+
+<!-- Mirrored from shreethemes.in/bizcell/layouts/portfolio-grid-two.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Nov 2025 11:53:04 GMT -->
+</html>

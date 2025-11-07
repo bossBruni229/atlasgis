@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from shreethemes.in/bizcell/layouts/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Nov 2025 11:52:00 GMT -->
+<head>
+    <meta charset="utf-8" />
+    <title>ATLAS GIS - Cabinet de cartographie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ATLAS GIS - Cabinet de cartographie" />
+    <meta name="keywords" content="cartographie, atlas-gis, par, formations" />
+    <meta name="version" content="1.0.0" />
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- BOOTSTRAP -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- ICON -->
+    <link href="css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="../../../unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet">
+    <!-- SLIDER-->
+    <link rel="stylesheet" href="css/tiny-slider.css" type="text/css">
+    <link rel="stylesheet" href="css/tobii.min.css">
+    <!-- Custom Css -->
+    <link href="css/style.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+</head>
+
+<body>
+    <!-- <div id="preloader">
+        <div id="status">
+            <div class="spinner">
+                <div class="cube1"></div>
+                <div class="cube2"></div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Navbar STart -->
+    <header id="topnav" class="defaultscroll sticky">
+        <div class="container">
+            <!-- Logo container-->
+            <a class="logo" href="index.html">
+                <span class="logo-light-mode">
+                    <img src="images/logo-at.png" class="l-dark" alt="ATLAS Logo">
+                    <img src="images/logo-at.png" class="l-light" alt="ATLAS Logo">
+                </span>
+                <img src="images/logo-at.png" class="logo-dark-mode" alt="ATLAS Logo">
+            </a>
+            <!-- End Logo container-->
+    
+            <div class="menu-extras">
+                <div class="menu-item">
+                    <!-- Mobile menu toggle-->
+                    <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                        <div class="lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                    <!-- End mobile menu toggle-->
+                </div>
+            </div>
+    
+            <ul class="buy-button list-inline mb-0">
+                <li class="list-inline-item search-icon mb-0">
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-link text-decoration-none dropdown-toggle mb-0 p-0"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="uil uil-search h5 text-dark nav-light-icon-dark mb-0"></i>
+                            <i class="uil uil-search h5 text-white nav-light-icon-white mb-0"></i>
+                        </button>
+                        <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow rounded border-0 mt-4 py-0"
+                            style="width: 300px;">
+                            <form class="p-4">
+                                <input type="text" id="text" name="name" class="form-control border bg-white"
+                                    placeholder="Search...">
+                            </form>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+    
+            <div id="navigation">
+                <!-- Navigation Menu-->
+                <ul class="navigation-menu nav-light nav-right">
+                    <li class="active"><a href="index.html">Accueil</a></li>
+                    <li><a href="#">À propos</a></li>
+                    <li class="has-submenu parent-parent-menu-item">
+                        <a href="javascript:void(0)">Services</a><span class="menu-arrow"></span>
+                        <ul class="submenu">
+                            <li><a href="#" class="sub-menu-item">Aménagement du territoire</a></li>
+                            <li><a href="#" class="sub-menu-item">Étude d'impact environnemental & PAR</a></li>
+                            <li><a href="#" class="sub-menu-item">Gestion des terres & fonciers</a></li>
+                            <li><a href="#" class="sub-menu-item">Développement SIG/SIF</a></li>
+                            <li><a href="#" class="sub-menu-item">Formations</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Projets</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <!--end navigation menu-->
+            </div>
+            <!--end navigation-->
+        </div>
+        <!--end container-->
+    </header>
+    
+    <!-- CSS spécifique pour ajuster le logo -->
+    <style>
+    /* Ajustement du logo avec espace en haut et en bas */
+    #topnav .logo img {
+        max-height: 50px;      /* réduit un peu la taille pour créer de l'espace */
+        width: auto;
+        display: block;
+        margin: 5px 0;         /* espace en haut et en bas */
+    }
+
+    /* Centrer verticalement le logo dans le header */
+    #topnav .logo {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    /* Assurer que tous les blocs features aient la même hauteur */
+    .row-eq-height {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .row-eq-height > [class*='col-'] {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .core-feature {
+        flex: 1 1 auto; /* occupe tout l'espace disponible dans la colonne */
+    }
+
+    .member-pic img {
+        width: 100%;
+        height: 300px; /* même hauteur pour tous */
+        object-fit: cover; /* recadre l'image sans la déformer */
+    }
+
+
+
+    </style>
+    
+    <!--end header-->
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+    <section class="bg-home zoom-image d-flex align-items-center position-relative" id="home">
+        <div class="bg-overlay image-wrap" id="hero-images"></div>
+        <div class="bg-overlay bg-gradient"></div>
+        <div class="container">
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-8 col-12">
+                    <div class="title-heading text-center">
+                        <h1 class="heading text-white mb-4">
+                            ATLAS GIS – Cartographie et SIG : des solutions géospatiales complètes pour vos projets
+                        </h1>
+                        <p class="text-white-50 mx-auto para-desc">
+                            Expertise en drone, télédétection, gestion foncière et aménagement du territoire pour des décisions précises et fiables.
+                        </p>
+                        <div class="mt-4">
+                            <a href="#services" class="btn btn-primary pt-2 me-2">Découvrez nos services</a>
+                            <a href="#contact" class="btn btn-outline-light pt-2">Contactez-nous</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
+    
+    <!--end section-->
+    <div class="position-relative">
+        <div class="home-shape-arrow">
+            <a href="#about"><i class="mdi mdi-arrow-down arrow-icon text-dark h5 shadow"></i></a>
+        </div>
+
+        <div class="shape overflow-hidden text-white">
+            <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
+            </svg>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+    <!-- Feature Start -->
+    <section class="section features bg-white" id="features">
+        <div class="container">
+            <div class="row row-eq-height no-gutters">
+    
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="d-flex features feature-primary core-feature rounded shadow p-4">
+                        <div class="icons text-center mx-auto">
+                            <i class="mdi mdi-map d-block mb-0"></i>
+                        </div>
+                        <div class="flex-1 ms-4">
+                            <h5 class="feature-head mb-1">Cartographie</h5>
+                            <p class="text-muted mb-0">Accompagnement complet pour vos projets de cartographie et visualisation spatiale.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="d-flex features feature-primary core-feature rounded shadow p-4">
+                        <div class="icons text-center mx-auto">
+                            <i class="mdi mdi-laptop d-block mb-0"></i>
+                        </div>
+                        <div class="flex-1 ms-4">
+                            <h5 class="feature-head mb-1">SIG & Développement d'application</h5>
+                            <p class="text-muted mb-0">Développement d’applications SIG sur mesure pour l’analyse et la gestion des données géospatiales.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="d-flex features feature-primary core-feature rounded shadow p-4">
+                        <div class="icons text-center mx-auto">
+                            <i class="mdi mdi-drone d-block mb-0"></i>
+                        </div>
+                        <div class="flex-1 ms-4">
+                            <h5 class="feature-head mb-1">Drone & Télédetection</h5>
+                            <p class="text-muted mb-0">Solutions de drones et télédétection pour suivi environnemental et projets fonciers.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="d-flex features feature-primary core-feature rounded shadow p-4">
+                        <div class="icons text-center mx-auto">
+                            <i class="mdi mdi-domain d-block mb-0"></i>
+                        </div>
+                        <div class="flex-1 ms-4">
+                            <h5 class="feature-head mb-1">Gestion des Terres - Cadastre - SIF - Foncier</h5>
+                            <p class="text-muted mb-0">Services complets pour la gestion des terres, cadastre et SIF pour vos projets fonciers.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="d-flex features feature-primary core-feature rounded shadow p-4">
+                        <div class="icons text-center mx-auto">
+                            <i class="mdi mdi-ruler-square d-block mb-0"></i>
+                        </div>
+                        <div class="flex-1 ms-4">
+                            <h5 class="feature-head mb-1">Topographie - Génie Civil</h5>
+                            <p class="text-muted mb-0">Mesures précises et analyses topographiques pour vos projets de génie civil.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="d-flex features feature-primary core-feature rounded shadow p-4">
+                        <div class="icons text-center mx-auto">
+                            <i class="mdi mdi-chart-bubble d-block mb-0"></i>
+                        </div>
+                        <div class="flex-1 ms-4">
+                            <h5 class="feature-head mb-1">Collecte de données</h5>
+                            <p class="text-muted mb-0">Collecte et traitement de données fiables pour vos études SIG et environnementales.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="d-flex features feature-primary core-feature rounded shadow p-4">
+                        <div class="icons text-center mx-auto">
+                            <i class="mdi mdi-leaf d-block mb-0"></i>
+                        </div>
+                        <div class="flex-1 ms-4">
+                            <h5 class="feature-head mb-1">Aménagement du territoire - Gestion de l'environnement</h5>
+                            <p class="text-muted mb-0">Planification territoriale et suivi environnemental pour vos projets durables.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="d-flex features feature-primary core-feature rounded shadow p-4">
+                        <div class="icons text-center mx-auto">
+                            <i class="mdi mdi-flask d-block mb-0"></i>
+                        </div>
+                        <div class="flex-1 ms-4">
+                            <h5 class="feature-head mb-1">Etude d'Impact Environnemental et Social - PAR</h5>
+                            <p class="text-muted mb-0">Analyses approfondies pour évaluer les impacts environnementaux et sociaux de vos projets.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="d-flex features feature-primary core-feature rounded shadow p-4">
+                        <div class="icons text-center mx-auto">
+                            <i class="mdi mdi-printer d-block mb-0"></i>
+                        </div>
+                        <div class="flex-1 ms-4">
+                            <h5 class="feature-head mb-1">Imprimeries</h5>
+                            <p class="text-muted mb-0">Solutions d’impression pour cartes, calques, papiers et documents professionnels.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="d-flex features feature-primary core-feature rounded shadow p-4">
+                        <div class="icons text-center mx-auto">
+                            <i class="mdi mdi-cube-outline d-block mb-0"></i>
+                        </div>
+                        <div class="flex-1 ms-4">
+                            <h5 class="feature-head mb-1">Ventes</h5>
+                            <p class="text-muted mb-0">GPS, GNSS, rouleaux de papier et matériels pour vos projets sur le terrain.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <div class="d-flex features feature-primary core-feature rounded shadow p-4">
+                        <div class="icons text-center mx-auto">
+                            <i class="mdi mdi-school d-block mb-0"></i>
+                        </div>
+                        <div class="flex-1 ms-4">
+                            <h5 class="feature-head mb-1">Formations</h5>
+                            <p class="text-muted mb-0">Formations personnalisées sur SIG, cartographie, topographie et gestion foncière.</p>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </section>
+    
+    
+    
+    
+    <!--end section-->
+    <!-- Feature End -->
+
+    <!-- start ABOUT -->
+    <section class="section bg-light" id="about">
+        <div class="container">
+            <div class="row align-items-center">
+    
+                <div class="col-md-6">
+                    <div class="about-image position-relative">
+                        <img src="images/about/11.png" class="img-fluid rounded shadow" alt="ATLAS Cabinet">
+    
+                        <div class="about-image-position">
+                            <img src="images/about/12.png" class="img-fluid rounded shadow-lg" alt="Notre équipe">
+                            <div class="position-absolute top-50 start-50 translate-middle">
+                                <div class="play-icon">
+                                    <div class="position-absolute top-50 start-50 translate-middle">
+                                        <a href="#!" data-type="youtube" data-id="yba7hPeTSjk"
+                                            class="play-btn lightbox border-0">
+                                            <i class="mdi mdi-play text-primary rounded-circle shadow text-center"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+    
+                <div class="col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                    <div class="section-title ms-lg-5">
+                        <span class="badge bg-soft-primary text-uppercase text-primary py-2 px-3 rounded-pill mb-2">
+                            Découvrez notre expertise
+                        </span>
+                        <h3 class="title text-capitalize mb-4">À propos d’ATLAS</h3>
+                        <p class="text-muted">
+                            ATLAS est un cabinet spécialisé dans la cartographie, le SIG, la télédétection, la gestion des terres et le développement de solutions SIG/SIF. Nous accompagnons nos clients dans leurs projets d’aménagement, d’études d’impact environnemental et social, ainsi que dans la formation et l’équipement technique.
+                        </p>
+                        <p class="text-muted">
+                            Notre équipe combine expertise technique, rigueur méthodologique et vision stratégique pour fournir des solutions fiables et adaptées à vos besoins. De la collecte de données à la mise en œuvre de projets complexes, nous garantissons qualité et précision à chaque étape.
+                        </p>
+                        <div class="mt-3 pt-2">
+                            <a href="#" class="btn btn-primary">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+    
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </section>
+    
+    <!-- end about -->
+    <!-- end section -->
+
+    <!-- CTA Start -->
+
+    <!--end section-->
+    <!-- CTA End -->
+
+    <!-- Services START -->
+    <section class="section" id="advantages">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="section-title text-center mb-4 pb-2">
+                        <span class="badge bg-soft-primary text-uppercase text-primary py-2 px-3 rounded-pill mb-2">
+                            Pourquoi nous choisir
+                        </span>
+                        <h3 class="title text-capitalize mb-4">Nos Atouts</h3>
+                        <p class="para-desc mx-auto text-muted mb-0">
+                            Découvrez pourquoi nos clients nous font confiance et comment nous apportons de la valeur à chaque projet.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!--end row-->
+    
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                    <div class="services text-center p-4 h-100">
+                        <div class="icon text-primary">
+                            <i class="mdi mdi-map h3 d-flex mx-auto rounded-circle"></i>
+                        </div>
+                        <div class="content mt-3">
+                            <h5 class="text-dark mt-2">Expertise Technique</h5>
+                            <p class="text-muted mt-2">Cartographie, SIG et développement d'applications adaptées à vos besoins.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                    <div class="services text-center p-4 h-100">
+                        <div class="icon text-primary">
+                            <i class="mdi mdi-drone h3 d-flex mx-auto rounded-circle"></i>
+                        </div>
+                        <div class="content mt-3">
+                            <h5 class="text-dark mt-2">Technologies Innovantes</h5>
+                            <p class="text-muted mt-2">Utilisation de drones et de la télédétection pour collecter des données précises.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                    <div class="services text-center p-4 h-100">
+                        <div class="icon text-primary">
+                            <i class="mdi mdi-account-group h3 d-flex mx-auto rounded-circle"></i>
+                        </div>
+                        <div class="content mt-3">
+                            <h5 class="text-dark mt-2">Approche Personnalisée</h5>
+                            <p class="text-muted mt-2">Chaque projet est unique, nous adaptons nos solutions à vos besoins spécifiques.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                    <div class="services text-center p-4 h-100">
+                        <div class="icon text-primary">
+                            <i class="mdi mdi-school h3 d-flex mx-auto rounded-circle"></i>
+                        </div>
+                        <div class="content mt-3">
+                            <h5 class="text-dark mt-2">Formation & Accompagnement</h5>
+                            <p class="text-muted mt-2">Nous formons vos équipes pour une maîtrise complète des outils et méthodes SIG.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                    <div class="services text-center p-4 h-100">
+                        <div class="icon text-primary">
+                            <i class="mdi mdi-timer-sand h3 d-flex mx-auto rounded-circle"></i>
+                        </div>
+                        <div class="content mt-3">
+                            <h5 class="text-dark mt-2">Rapidité et Fiabilité</h5>
+                            <p class="text-muted mt-2">Des livrables précis et dans les délais pour tous vos projets.</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                    <div class="services text-center p-4 h-100">
+                        <div class="icon text-primary">
+                            <i class="mdi mdi-earth h3 d-flex mx-auto rounded-circle"></i>
+                        </div>
+                        <div class="content mt-3">
+                            <h5 class="text-dark mt-2">Couverture Complète</h5>
+                            <p class="text-muted mt-2">Nous intervenons sur tous les aspects : cartographie, foncier, environnement et aménagement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </section>
+    
+    <!--end section-->
+    <!-- Services END -->
+
+    <!-- Testimonial Start -->
+
+    <!--end section-->
+    <!-- Testimonial End -->
+
+    <!-- Price Start -->
+
+    <!--end section-->
+    <!-- Price End -->
+
+    <!-- Team Start -->
+    <section class="section bg-light" id="team">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="section-title text-center mb-4 pb-2">
+                        <span class="badge bg-soft-primary text-uppercase text-primary py-2 px-3 rounded-pill mb-2">Nos Experts</span>
+                        <h3 class="title text-capitalize mb-4">Notre Équipe</h3>
+                        <p class="para-desc mx-auto text-muted mb-0">
+                            Notre équipe rassemble des experts en SIG, cartographie, drones, topographie et communication pour offrir des solutions de qualité à vos projets.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row">
+                <!-- Ligne 1 -->
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                    <div class="team-member text-center position-relative overflow-hidden mb-4 shadow rounded">
+                        <div class="member-pic position-relative">
+                            <img src="images/team/Daniel.JPG" class="img-fluid d-block mx-auto" alt="Dr TOSSOU Daniel">
+                            <div class="team-overlay">
+                                <div class="team-info text-center">
+                                    <h5 class="member-name"><a href="#" class="text-white mb-0">Dr TOSSOU Daniel</a></h5>
+                                    <span class="text-white-50 fs-6">Directeur Général</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                    <div class="team-member text-center position-relative overflow-hidden mb-4 shadow rounded">
+                        <div class="member-pic position-relative">
+                            <img src="images/team/faical.jpeg" class="img-fluid d-block mx-auto" alt="Faiçal IBRAH">
+                            <div class="team-overlay">
+                                <div class="team-info text-center">
+                                    <h5 class="member-name"><a href="#" class="text-white mb-0">IBRAH Faiçal</a></h5>
+                                    <span class="text-white-50 fs-6">Directeur Technique, Pilote Drone</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                    <div class="team-member text-center position-relative overflow-hidden mb-4 shadow rounded">
+                        <div class="member-pic position-relative">
+                            <img src="images/team/romuald.png" class="img-fluid d-block mx-auto" alt="AMADJIKPE Romuald">
+                            <div class="team-overlay">
+                                <div class="team-info text-center">
+                                    <h5 class="member-name"><a href="#" class="text-white mb-0">AMADJIKPE Romuald</a></h5>
+                                    <span class="text-white-50 fs-6">Chargé travaux Topographie</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Ligne 2 -->
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                    <div class="team-member text-center position-relative overflow-hidden mb-4 shadow rounded">
+                        <div class="member-pic position-relative">
+                            <img src="images/team/sylas.jpg" class="img-fluid d-block mx-auto" alt="Sylas">
+                            <div class="team-overlay">
+                                <div class="team-info text-center">
+                                    <h5 class="member-name"><a href="#" class="text-white mb-0">Sylas</a></h5>
+                                    <span class="text-white-50 fs-6">Chargé travaux Topographie, Cartographie, Drone</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                    <div class="team-member text-center position-relative overflow-hidden mb-4 shadow rounded">
+                        <div class="member-pic position-relative">
+                            <img src="images/team/etienne.jpg" class="img-fluid d-block mx-auto" alt="DENALE Etienne">
+                            <div class="team-overlay">
+                                <div class="team-info text-center">
+                                    <h5 class="member-name"><a href="#" class="text-white mb-0">DENALE Etienne</a></h5>
+                                    <span class="text-white-50 fs-6">Sécrétaire administratif</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                    <div class="team-member text-center position-relative overflow-hidden mb-4 shadow rounded">
+                        <div class="member-pic position-relative">
+                            <img src="images/team/edem.jpg" class="img-fluid d-block mx-auto" alt="ANAKA Edem">
+                            <div class="team-overlay">
+                                <div class="team-info text-center">
+                                    <h5 class="member-name"><a href="#" class="text-white mb-0">ANAKA Edem</a></h5>
+                                    <span class="text-white-50 fs-6">Chargé Communication</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+    
+    
+    <!--end section-->
+    <!-- Team End -->
+
+
+    <!-- Blog Start -->
+    <section class="section" id="blog">
+        <div class="page-triangle triangle-light"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="section-title text-center mb-4 pb-2">
+                        <span class="badge bg-soft-primary text-uppercase text-primary py-2 px-3 rounded-pill mb-2">Actualités</span>
+                        <h3 class="title text-capitalize mb-4">Dernières nouvelles & annonces</h3>
+                        <p class="para-desc mx-auto text-muted mb-0">Découvrez nos projets, études, événements et conseils d’experts.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row">
+                <!-- Article 1 -->
+                <div class="col-lg-4 col-md-6 mt-4 pt-2">
+                    <div class="card blog blog-primary shadow rounded overflow-hidden border-0 h-100 d-flex flex-column">
+                        <div class="card-img image position-relative overflow-hidden">
+                            <div class="position-relative overflow-hidden mx-4 mt-4 rounded">
+                                <img src="images/blog/1.jpeg" class="img-fluid" alt="Projet Cartographie">
+                                <div class="bg">
+                                    <div class="bg-overlay bg-gradient"></div>
+                                </div>
+                            </div>
+                            <div class="blog-tag">
+                                <a href="#" class="badge bg-primary text-white"><i class="mdi mdi-tag me-2"></i>Formation</a>
+                            </div>
+                            <div class="link">
+                                <a href="#" class="read-more text-white fs-6">Lire plus</a>
+                            </div>
+                        </div>
+                        <div class="card-body content p-0 flex-1 d-flex flex-column justify-content-between">
+                            <div class="p-4">
+                                <a href="#" class="h5 title text-dark d-block mb-0">Formation des coopératives agricoles sur 1750 modules axés sur la gestion financière</a>
+                                <p class="text-muted mt-2 mb-0">Cette formation a permis aux membres des coopératives agricoles de renforcer leurs compétences en gestion financière, en suivi des budgets, et en planification des projets agricoles, favorisant ainsi une meilleure performance économique.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Article 2 -->
+                <div class="col-lg-4 col-md-6 mt-4 pt-2">
+                    <div class="card blog blog-primary shadow rounded overflow-hidden border-0 h-100 d-flex flex-column">
+                        <div class="card-img image position-relative overflow-hidden">
+                            <div class="position-relative overflow-hidden mx-4 mt-4 rounded">
+                                <img src="images/blog/2.jpg" class="img-fluid" alt="Mission Drone">
+                                <div class="bg">
+                                    <div class="bg-overlay bg-gradient"></div>
+                                </div>
+                            </div>
+                            <div class="blog-tag">
+                                <a href="#" class="badge bg-primary text-white"><i class="mdi mdi-tag me-2"></i>PAR</a>
+                            </div>
+                            <div class="link">
+                                <a href="#" class="read-more text-white fs-6">Lire plus</a>
+                            </div>
+                        </div>
+                        <div class="card-body content p-0 flex-1 d-flex flex-column justify-content-between">
+                            <div class="p-4">
+                                <a href="#" class="h5 title text-dark d-block mb-0">Réalisation d'un PAR - Gazoduc de Maria-Gléta vers la zone industrielle de Glo-Djigbè (GDIZ)</a>
+                                <p class="text-muted mt-2 mb-0">Étude approfondie de l’impact environnemental et social pour le projet de gazoduc, incluant la cartographie des zones concernées, l’identification des risques et la mise en place de mesures d’atténuation conformes aux normes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Article 3 -->
+                <div class="col-lg-4 col-md-6 mt-4 pt-2">
+                    <div class="card blog blog-primary shadow rounded overflow-hidden border-0 h-100 d-flex flex-column">
+                        <div class="card-img image position-relative overflow-hidden">
+                            <div class="position-relative overflow-hidden mx-4 mt-4 rounded">
+                                <img src="images/blog/3.jpg" class="img-fluid" alt="Formation Drone">
+                                <div class="bg">
+                                    <div class="bg-overlay bg-gradient"></div>
+                                </div>
+                            </div>
+                            <div class="blog-tag">
+                                <a href="#" class="badge bg-primary text-white"><i class="mdi mdi-tag me-2"></i>Drone</a>
+                            </div>
+                            <div class="link">
+                                <a href="#" class="read-more text-white fs-6">Lire plus</a>
+                            </div>
+                        </div>
+                        <div class="card-body content p-0 flex-1 d-flex flex-column justify-content-between">
+                            <div class="p-4">
+                                <a href="#" class="h5 title text-dark d-block mb-0">Formation en pilotage de drone par le Cabinet ATLAS-GIS aux techniciens en topo</a>
+                                <p class="text-muted mt-2 mb-0">Session pratique et théorique pour former les techniciens en topographie à l’utilisation des drones pour la collecte de données géospatiales, incluant photogrammétrie, relevés topographiques et modélisation 3D.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <!-- Blog End -->
+
+    <!-- Partner Start -->
+    <section class="section-two bg-light">
+        <div class="page-triangle"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="tiny-five-item">
+                        <div class="tiny-slide">
+                            <img src="images/testi/01.png" class="img-fluid mx-auto d-block" alt="clients">
+                        </div>
+                        <div class="tiny-slide">
+                            <img src="images/testi/02.png" class="img-fluid mx-auto d-block" alt="clients">
+                        </div>
+                        <div class="tiny-slide">
+                            <img src="images/testi/02.png" class="img-fluid mx-auto d-block" alt="clients">
+                        </div>
+                        <div class="tiny-slide">
+                            <img src="images/testi/03.png" class="img-fluid mx-auto d-block" alt="clients">
+                        </div>
+                        <div class="tiny-slide">
+                            <img src="images/testi/04.png" class="img-fluid mx-auto d-block" alt="clients">
+                        </div>
+                        <div class="tiny-slide">
+                            <img src="images/testi/05.png" class="img-fluid mx-auto d-block" alt="clients">
+                        </div>
+                        <div class="tiny-slide">
+                            <img src="images/testi/06.png" class="img-fluid mx-auto d-block" alt="clients">
+                        </div>
+                        <div class="tiny-slide">
+                            <img src="images/testi/07.png" class="img-fluid mx-auto d-block" alt="clients">
+                        </div>
+                        <div class="tiny-slide">
+                            <img src="images/testi/08.png" class="img-fluid mx-auto d-block" alt="clients">
+                        </div>
+                        <div class="tiny-slide">
+                            <img src="images/testi/09.png" class="img-fluid mx-auto d-block" alt="clients">
+                        </div>
+                        <div class="tiny-slide">
+                            <img src="images/testi/10.png" class="img-fluid mx-auto d-block" alt="clients">
+                        </div>
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--end row-->
+        </div>
+        <!--end container-->
+    </section>
+    <!--end section-->
+    <!-- Partner End -->
+
+    <!-- Footer Start -->
+    <footer class="footer bg-dark">
+        <div class="container">
+            <div class="row">
+                <!-- Logo et description -->
+                <div class="col-lg-4 col-12 mb-4 pb-2">
+                    <a href="#" class="logo-footer">
+                        <img src="images/logo-at.png" height="24" alt="ATLAS-GIS">
+                    </a>
+                    <p class="mt-4 text-white-50">
+                        Cabinet ATLAS-GIS : expertise en topographie, cartographie et gestion de projets géospatiaux.
+                    </p>
+                    <div class="mt-3">
+                        <ul class="list-unstyled footer-icon social mb-0">
+                            <li class="list-inline-item mb-0"><a href="#" class="rounded icon-sm"><i data-feather="facebook" class="fea icon-sm"></i></a></li>
+                            <li class="list-inline-item mb-0"><a href="#" class="rounded icon-sm"><i data-feather="instagram" class="fea icon-sm"></i></a></li>
+                            <li class="list-inline-item mb-0"><a href="#" class="rounded icon-sm"><i data-feather="twitter" class="fea icon-sm"></i></a></li>
+                            <li class="list-inline-item mb-0"><a href="#" class="rounded icon-sm"><i data-feather="linkedin" class="fea icon-sm"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <!-- Liens de l'entreprise -->
+                <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <h4 class="text-light footer-head">À propos</h4>
+                    <ul class="list-unstyled footer-list mt-4">
+                        <li><a href="#" class="text-foot fs-6"><i class="mdi mdi-chevron-right"></i> Notre Cabinet</a></li>
+                        <li><a href="#" class="text-foot fs-6"><i class="mdi mdi-chevron-right"></i> Services</a></li>
+                        <li><a href="#" class="text-foot fs-6"><i class="mdi mdi-chevron-right"></i> Équipe</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Liens utiles -->
+                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <h4 class="text-light footer-head">Liens utiles</h4>
+                    <ul class="list-unstyled footer-list mt-4">
+                        <li><a href="#" class="text-foot fs-6"><i class="mdi mdi-chevron-right"></i> Protection des données</a></li>
+                        <li><a href="#" class="text-foot fs-6"><i class="mdi mdi-chevron-right"></i> Paiements sécurisés</a></li>
+                        <li><a href="#" class="text-foot fs-6"><i class="mdi mdi-chevron-right"></i> Conditions d’utilisation</a></li>
+                        <li><a href="#" class="text-foot fs-6"><i class="mdi mdi-chevron-right"></i> Politique de confidentialité</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Coordonnées -->
+                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <h4 class="text-light fw-normal footer-head mb-4">Contact</h4>
+                    <ul class="list-unstyled footer-list">
+                        <li class="fs-6"><i class="mdi mdi-map-marker me-2"></i> Cotonou Carrefour Cossi / Feux de signalisation, Cotonou, Bénin</li>
+                        <li class="fs-6"><i class="mdi mdi-email me-2"></i> atlasgisbj@gmail.com</li>
+                        <li class="fs-6"><i class="mdi mdi-phone me-2"></i> +229 01 97 11 28 28</li>
+                        <li class="fs-6"><i class="mdi mdi-earth me-2"></i> www.atlasgis.bj</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!--end footer-->
+
+    <footer class="footer footer-bar bg-dark border-top">
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <div class="text-sm-start">
+                        <p class="mb-0">© <script>
+                                document.write(new Date().getFullYear())
+                            </script> ATLAS GIS SARL</p>
+                    </div>
+                </div>
+                <!--end col-->
+
+
+            </div>
+        </div>
+        <!--end container-->
+    </footer>
+    <!--end footer-->
+    <!-- Footer End -->
+
+
+    <!-- Style switcher -->
+    <div id="style-switcher" class="bg-light border p-3 pt-2 pb-2" onclick="toggleSwitcher()">
+        <div>
+            <h6 class="title text-center">Select Your Color</h6>
+            <ul class="pattern">
+                <li class="list-inline-item">
+                    <a class="color1" href="javascript: void(0);" onclick="setColor('default')"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="color2" href="javascript: void(0);" onclick="setColor('blue')"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="color3" href="javascript: void(0);" onclick="setColor('yellow')"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="color4" href="javascript: void(0);" onclick="setColor('dark-pink')"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="color5" href="javascript: void(0);" onclick="setColor('orange')"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="color6" href="javascript: void(0);" onclick="setColor('brown')"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="color7" href="javascript: void(0);" onclick="setColor('green')"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="color8" href="javascript: void(0);" onclick="setColor('purple')"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="color9" href="javascript: void(0);" onclick="setColor('firozi')"></a>
+                </li>
+            </ul>
+        </div>
+        <!-- <div class="bottom">
+            <a href="javascript: void(0);" class="settings bg-white shadow d-block"><i
+                    class="mdi mdi-cog ms-1 mdi-24px position-absolute mdi-spin text-primary"></i></a>
+        </div> -->
+    </div>
+    <!-- end Style switcher -->
+
+    <!-- Back to top -->
+    <a href="#" class="back-to-top rounded-pill text-center" id="back-to-top">
+        <i class="mdi mdi-chevron-up d-block"> </i>
+    </a>
+    <!-- Back to top -->
+
+    <!-- javascript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- SLIDER -->
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/tiny-slider-init.js"></script>
+    <!-- play-btn -->
+    <script src="js/tobii.min.js"></script>
+    <!-- PARALLAX -->
+    <script src="js/parallax.js"></script>
+    <!-- BACKGROUND -->
+    <script src="js/easy_background.js"></script>
+    <!-- Switcher -->
+    <script src="js/switcher.js"></script>
+    <script src="js/feather.min.js"></script>
+    <!-- Main Js -->
+    <script src="js/plugins.init.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        easy_background("#hero-images", {
+            slide: ["images/bg/bg2.jpg","images/bg/bg1.png", "images/bg/bg3.png", "images/bg/bg4.png"],
+            delay: [5000, 5000, 5000]
+        });
+    </script>
+
+</body>
+
+
+<!-- Mirrored from shreethemes.in/bizcell/layouts/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Nov 2025 11:52:41 GMT -->
+</html>
