@@ -146,32 +146,47 @@
         object-fit: cover; /* recadre l'image sans la déformer */
     }
 
-    /* Cercle contenant l'icône — centré verticalement et horizontalement */
+    /* Conteneur cercle : centrage parfait */
     .services .icon {
-    width: 72px;              /* diamètre du cercle — ajuste si besoin */
+    width: 72px;               /* diamètre, ajuste si besoin */
     height: 72px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;          /* centre le cercle dans la colonne */
-    background: rgba(47,85,212,0.08); /* optionnel : fond léger */
+    margin: 0 auto;
+    background: rgba(47,85,212,0.06); /* léger fond, optionnel */
+    overflow: hidden;          /* évite voir un "carré" provenant de l'icône */
+    padding: 0;
     }
 
-    /* Taille et alignement de l'icône à l'intérieur */
+    /* Forcer l'icône à ne pas avoir de fond ni bordures imposées par d'autres classes */
     .services .icon .mdi {
-    font-size: 28px;         /* taille de l'icône */
-    line-height: 1;
-    display: inline-block;   /* évite les problèmes de baseline */
+    display: block !important;     /* makes element a block for consistent sizing */
+    line-height: 1 !important;
+    font-size: 28px;               /* taille icône — ajuste si besoin */
+    width: auto;
+    height: auto;
+    background: transparent !important;
+    border-radius: 0 !important;
     vertical-align: middle;
-    color: #2f55d4;          /* couleur icône (ton primaire) */
+    color: #2f55d4;                /* couleur icône (ton primaire) */
     }
 
-    /* Responsive : réduire le cercle sur petits écrans */
+    /* Si Bootstrap ou le thème met des padding/margins sur .icon > i, on force à zéro */
+    .services .icon .mdi.h3,
+    .services .icon .mdi.d-flex,
+    .services .icon .mdi.mx-auto {
+    padding: 0 !important;
+    margin: 0 !important;
+    }
+
+    /* Responsive */
     @media (max-width: 576px) {
     .services .icon { width: 56px; height: 56px; }
     .services .icon .mdi { font-size: 22px; }
     }
+
 
 
 
@@ -465,77 +480,78 @@
     
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                    <div class="services text-center p-4 h-100">
-                      <div class="icon">
-                        <i class="mdi mdi-map"></i>
-                      </div>
-                      <div class="content mt-3">
-                        <h5 class="text-dark mt-2">Expertise Technique</h5>
-                        <p class="text-muted mt-2">Cartographie, SIG et développement d'applications adaptées à vos besoins.</p>
-                      </div>
+                  <div class="services text-center p-4 h-100">
+                    <div class="icon">
+                      <i class="mdi mdi-map"></i>
                     </div>
-                </div>                  
-    
-                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                    <div class="services text-center p-4 h-100">
-                        <div class="icon text-primary">
-                            <i class="mdi mdi-drone h3 d-flex mx-auto rounded-circle"></i>
-                        </div>
-                        <div class="content mt-3">
-                            <h5 class="text-dark mt-2">Technologies Innovantes</h5>
-                            <p class="text-muted mt-2">Utilisation de drones et de la télédétection pour collecter des données précises.</p>
-                        </div>
+                    <div class="content mt-3">
+                      <h5 class="text-dark mt-2">Expertise Technique</h5>
+                      <p class="text-muted mt-2">Cartographie, SIG et développement d'applications adaptées à vos besoins.</p>
                     </div>
+                  </div>
                 </div>
-    
+              
                 <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                    <div class="services text-center p-4 h-100">
-                        <div class="icon text-primary">
-                            <i class="mdi mdi-account-group h3 d-flex mx-auto rounded-circle"></i>
-                        </div>
-                        <div class="content mt-3">
-                            <h5 class="text-dark mt-2">Approche Personnalisée</h5>
-                            <p class="text-muted mt-2">Chaque projet est unique, nous adaptons nos solutions à vos besoins spécifiques.</p>
-                        </div>
+                  <div class="services text-center p-4 h-100">
+                    <div class="icon">
+                      <i class="mdi mdi-drone"></i>
                     </div>
+                    <div class="content mt-3">
+                      <h5 class="text-dark mt-2">Technologies Innovantes</h5>
+                      <p class="text-muted mt-2">Utilisation de drones et de la télédétection pour collecter des données précises.</p>
+                    </div>
+                  </div>
                 </div>
-    
+              
                 <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                    <div class="services text-center p-4 h-100">
-                        <div class="icon text-primary">
-                            <i class="mdi mdi-school h3 d-flex mx-auto rounded-circle"></i>
-                        </div>
-                        <div class="content mt-3">
-                            <h5 class="text-dark mt-2">Formation & Accompagnement</h5>
-                            <p class="text-muted mt-2">Nous formons vos équipes pour une maîtrise complète des outils et méthodes SIG.</p>
-                        </div>
+                  <div class="services text-center p-4 h-100">
+                    <div class="icon">
+                      <i class="mdi mdi-account-group"></i>
                     </div>
+                    <div class="content mt-3">
+                      <h5 class="text-dark mt-2">Approche Personnalisée</h5>
+                      <p class="text-muted mt-2">Chaque projet est unique, nous adaptons nos solutions à vos besoins spécifiques.</p>
+                    </div>
+                  </div>
                 </div>
-    
+              
                 <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                    <div class="services text-center p-4 h-100">
-                        <div class="icon text-primary">
-                            <i class="mdi mdi-timer-sand h3 d-flex mx-auto rounded-circle"></i>
-                        </div>
-                        <div class="content mt-3">
-                            <h5 class="text-dark mt-2">Rapidité et Fiabilité</h5>
-                            <p class="text-muted mt-2">Des livrables précis et dans les délais pour tous vos projets.</p>
-                        </div>
+                  <div class="services text-center p-4 h-100">
+                    <div class="icon">
+                      <i class="mdi mdi-school"></i>
                     </div>
+                    <div class="content mt-3">
+                      <h5 class="text-dark mt-2">Formation & Accompagnement</h5>
+                      <p class="text-muted mt-2">Nous formons vos équipes pour une maîtrise complète des outils et méthodes SIG.</p>
+                    </div>
+                  </div>
                 </div>
-    
+              
                 <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                    <div class="services text-center p-4 h-100">
-                        <div class="icon text-primary">
-                            <i class="mdi mdi-earth h3 d-flex mx-auto rounded-circle"></i>
-                        </div>
-                        <div class="content mt-3">
-                            <h5 class="text-dark mt-2">Couverture Complète</h5>
-                            <p class="text-muted mt-2">Nous intervenons sur tous les aspects : cartographie, foncier, environnement et aménagement.</p>
-                        </div>
+                  <div class="services text-center p-4 h-100">
+                    <div class="icon">
+                      <i class="mdi mdi-timer-sand"></i>
                     </div>
+                    <div class="content mt-3">
+                      <h5 class="text-dark mt-2">Rapidité et Fiabilité</h5>
+                      <p class="text-muted mt-2">Des livrables précis et dans les délais pour tous vos projets.</p>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+                  <div class="services text-center p-4 h-100">
+                    <div class="icon">
+                      <i class="mdi mdi-earth"></i>
+                    </div>
+                    <div class="content mt-3">
+                      <h5 class="text-dark mt-2">Couverture Complète</h5>
+                      <p class="text-muted mt-2">Nous intervenons sur tous les aspects : cartographie, foncier, environnement et aménagement.</p>
+                    </div>
+                  </div>
                 </div>
             </div>
+              
             <!--end row-->
         </div>
         <!--end container-->
