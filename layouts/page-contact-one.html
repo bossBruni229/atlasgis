@@ -5,13 +5,10 @@
 <!-- Mirrored from shreethemes.in/bizcell/layouts/page-contact-one.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Nov 2025 11:53:19 GMT -->
 <head>
     <meta charset="utf-8" />
-    <title>Bizcell - Landing Page Template</title>
+    <title>ATLAS GIS - Cabinet de cartographie</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Premium Bootstrap 5 Landing Page Template" />
-    <meta name="keywords" content="bootstrap 5, premium, marketing, multipurpose" />
-    <meta name="author" content="Shreethemes" />
-    <meta name="website" content="https://shreethemes.in/" />
-    <meta name="email" content="support@shreethemes.in" />
+    <meta name="description" content="ATLAS GIS - Cabinet de cartographie" />
+    <meta name="keywords" content="cartographie, atlas-gis, par, formations" />
     <meta name="version" content="1.0.0" />
 
     <!-- FAVICON -->
@@ -23,6 +20,7 @@
     <link href="../../../unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet">
     <!-- SLIDER-->
     <link rel="stylesheet" href="css/tiny-slider.css" type="text/css">
+    <link rel="stylesheet" href="css/tobii.min.css">
     <!-- Custom Css -->
     <link href="css/style.min.css" rel="stylesheet" type="text/css" />
     <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
@@ -38,14 +36,18 @@
         </div>
     </div> -->
      <!-- Navbar STart -->
-     <header id="topnav" class="defaultscroll sticky">
+    <header id="topnav" class="defaultscroll sticky">
         <div class="container">
             <!-- Logo container-->
             <a class="logo" href="index.html">
-                <img src="images/logo-dark.png" class="logo-light-mode" alt="">
-                <img src="images/logo-light.png" class="logo-dark-mode" alt="">
+                <span class="logo-light-mode">
+                    <img src="images/logo-at.png" class="l-dark" alt="ATLAS Logo">
+                    <img src="images/logo-at.png" class="l-light" alt="ATLAS Logo">
+                </span>
+                <img src="images/logo-at.png" class="logo-dark-mode" alt="ATLAS Logo">
             </a>
             <!-- End Logo container-->
+    
             <div class="menu-extras">
                 <div class="menu-item">
                     <!-- Mobile menu toggle-->
@@ -59,13 +61,14 @@
                     <!-- End mobile menu toggle-->
                 </div>
             </div>
-
+    
             <ul class="buy-button list-inline mb-0">
                 <li class="list-inline-item search-icon mb-0">
                     <div class="dropdown">
                         <button type="button" class="btn btn-link text-decoration-none dropdown-toggle mb-0 p-0"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="uil uil-search h5 text-dark mb-0"></i>
+                            <i class="uil uil-search h5 text-dark nav-light-icon-dark mb-0"></i>
+                            <i class="uil uil-search h5 text-white nav-light-icon-white mb-0"></i>
                         </button>
                         <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow rounded border-0 mt-4 py-0"
                             style="width: 300px;">
@@ -77,185 +80,25 @@
                     </div>
                 </li>
             </ul>
-            
+    
             <div id="navigation">
                 <!-- Navigation Menu-->
-                <ul class="navigation-menu nav-right">
+                <ul class="navigation-menu nav-light nav-right">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="#">À propos</a></li>
                     <li class="has-submenu parent-parent-menu-item">
-                        <a href="javascript:void(0)">Home</a><span class="menu-arrow"></span>
+                        <a href="javascript:void(0)">Services</a><span class="menu-arrow"></span>
                         <ul class="submenu">
-                            <li>
-                                <ul>
-                                    <li>
-                                        <a href="index.html" class="sub-menu-item">
-                                            Home
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index-two.html" class="sub-menu-item">
-                                            Home two
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index-three.html" class="sub-menu-item">
-                                            Home three
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index-four.html" class="sub-menu-item">
-                                            Home four
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="index-five.html" class="sub-menu-item">
-                                            Home five
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index-six.html" class="sub-menu-item">
-                                            Home six
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index-seven.html" class="sub-menu-item">
-                                            Home seven
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="index-onepage.html" class="sub-menu-item">
-                                            Home onepage
-                                        </a>
-                                    </li>
-
-
-                                </ul>
-                            </li>
+                            <li><a href="#" class="sub-menu-item">Aménagement du territoire</a></li>
+                            <li><a href="#" class="sub-menu-item">Étude d'impact environnemental & PAR</a></li>
+                            <li><a href="#" class="sub-menu-item">Gestion des terres & fonciers</a></li>
+                            <li><a href="#" class="sub-menu-item">Développement SIG/SIF</a></li>
+                            <li><a href="#" class="sub-menu-item">Formations</a></li>
                         </ul>
                     </li>
-                    <li><a href="page-about.html" class="sub-menu-item">About Us</a></li>
-                    <li class="has-submenu parent-parent-menu-item">
-                        <a href="javascript:void(0)">Pages</a><span class="menu-arrow"></span>
-                        <ul class="submenu">
-                            <li class="has-submenu parent-menu-item"><a href="javascript:void(0)">Services</a><span
-                                    class="submenu-arrow"></span>
-                                <ul class="submenu">
-                                    <li><a href="page-service-one.html" class="sub-menu-item">Services One</a></li>
-                                    <li><a href="page-service-two.html" class="sub-menu-item">Service Two</a></li>
-                                    <li><a href="page-service-three.html" class="sub-menu-item">Service Three</a></li>
-                                    <li><a href="page-service-detail.html" class="sub-menu-item">Service Detail </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="has-submenu parent-menu-item"><a href="javascript:void(0)">Team</a><span
-                                    class="submenu-arrow"></span>
-                                <ul class="submenu">
-                                    <li><a href="page-team.html" class="sub-menu-item">Team One</a></li>
-                                    <li><a href="page-team-two.html" class="sub-menu-item">Team Two</a></li>
-                                    <li><a href="page-team-three.html" class="sub-menu-item">Team Three</a></li>
-                                    <li><a href="page-team-detail.html" class="sub-menu-item">Team Detail </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><a href="page-features.html" class="sub-menu-item">Features</a></li>
-                            <li><a href="page-faq.html" class="sub-menu-item">FAQs</a></li>
-                            <li><a href="page-pricing.html" class="sub-menu-item">Pricing</a></li>
-                            <li><a href="page-request.html" class="sub-menu-item">Request</a></li>
-                            
-
-                            <li class="has-submenu parent-menu-item"><a href="javascript:void(0)">User Pages</a><span
-                                    class="submenu-arrow"></span>
-                                <ul class="submenu">
-                                    <li><a href="page-login.html" class="sub-menu-item"> Login Page</a></li>
-                                    <li><a href="page-signup.html" class="sub-menu-item"> Signup Page</a></li>
-                                    <li><a href="page-forgotpassword.html" class="sub-menu-item"> Forgot Password</a>
-                                    </li>
-                                    <li><a href="page-thankyou.html" class="sub-menu-item">Thank You</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li><a href="page-comingsoon.html" class="sub-menu-item">Coming Soon</a></li>
-                            <li><a href="page-404.html" class="sub-menu-item">404 Error</a></li>
-                            <li><a href="page-components.html" class="sub-menu-item">Components</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="has-submenu parent-parent-menu-item">
-                        <a href="javascript:void(0)">Portfolio</a><span class="menu-arrow"></span>
-                        <ul class="submenu megamenu">
-                            <li>
-                                <ul>
-                                    <li class="megamenu-head">Grid Portfolio</li>
-                                    <li><a href="portfolio-grid-two.html" class="sub-menu-item">Two Column</a></li>
-                                    <li><a href="portfolio-grid-three.html" class="sub-menu-item">Three Column</a></li>
-                                    <li><a href="portfolio-grid-four.html" class="sub-menu-item">Four Column</a></li>
-                                    <li><a href="portfolio-grid-five.html" class="sub-menu-item">Five Column</a></li>
-                                    <li><a href="portfolio-grid-six.html" class="sub-menu-item">Six Column</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul>
-                                    <li class="megamenu-head">Modern Portfolio</li>
-                                    <li><a href="portfolio-modern-two.html" class="sub-menu-item">Two Column</a></li>
-                                    <li><a href="portfolio-modern-three.html" class="sub-menu-item">Three Column</a></li>
-                                    <li><a href="portfolio-modern-four.html" class="sub-menu-item">Four Column</a></li>
-                                    <li><a href="portfolio-modern-five.html" class="sub-menu-item">Five Column</a></li>
-                                    <li><a href="portfolio-modern-six.html" class="sub-menu-item">Six Column</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul>
-                                    <li class="megamenu-head">Masonry Portfolio</li>
-                                    <li><a href="portfolio-masonry-two.html" class="sub-menu-item">Two Column</a></li>
-                                    <li><a href="portfolio-masonry-three.html" class="sub-menu-item">Three Column</a></li>
-                                    <li><a href="portfolio-masonry-four.html" class="sub-menu-item">Four Column</a></li>
-                                    <li><a href="portfolio-masonry-five.html" class="sub-menu-item">Five Column</a></li>
-                                    <li><a href="portfolio-masonry-six.html" class="sub-menu-item">Six Column</a></li>
-                                </ul>
-                            </li>
-
-                            <li>
-                                <ul>
-                                    <li class="megamenu-head">Standard Portfolio</li>
-                                    <li><a href="portfolio-st-two.html" class="sub-menu-item">Two Column</a></li>
-                                    <li><a href="portfolio-st-three.html" class="sub-menu-item">Three Column</a></li>
-                                    <li><a href="portfolio-st-four.html" class="sub-menu-item">Four Column</a></li>
-                                    <li><a href="portfolio-st-five.html" class="sub-menu-item">Five Column</a></li>
-                                    <li><a href="portfolio-st-six.html" class="sub-menu-item">Six Column</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <ul>
-                                    <li class="megamenu-head">Portfolio Deatils</li>
-                                    <li><a href="portfolio-one.html" class="sub-menu-item"> Portfolio One</a></li>
-                                    <li><a href="portfolio-two.html" class="sub-menu-item"> Portfolio Two</a></li>
-                                     <li><a href="portfolio-three.html" class="sub-menu-item"> Portfolio Three</a></li>
-                                    <li><a href="portfolio-four.html" class="sub-menu-item"> Portfolio Four</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-
-                    <li class="has-submenu parent-parent-menu-item">
-                        <a href="javascript:void(0)">Blogs</a><span class="menu-arrow"></span>
-                        <ul class="submenu">
-                            <li><a href="blog-two-column.html" class="sub-menu-item">Blog 2 column</a></li>
-                            <li><a href="blog-three-column.html" class="sub-menu-item">Blog 3 column</a></li>
-                            <li><a href="blog-leftsidebar.html" class="sub-menu-item">Left Sidebar</a></li>
-                            <li><a href="blog-rightsidebar.html" class="sub-menu-item">Right Sidebar</a></li>
-                            <li><a href="blog-fullwidth.html" class="sub-menu-item">Full width</a></li>
-                            <li><a href="blog-detail.html" class="sub-menu-item"> Blog detail</a></li>
-                            <li><a href="blog-author.html" class="sub-menu-item">Author</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="has-submenu parent-menu-item"><a href="javascript:void(0)">Contact</a><span
-                            class="submenu-arrow"></span>
-                        <ul class="submenu">
-                            <li><a href="page-contact-one.html" class="sub-menu-item">Contact One</a></li>
-                            <li><a href="page-contact-two.html" class="sub-menu-item">Contact Two</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="#">Projets</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li class="active"><a href="#">Contact</a></li>
                 </ul>
                 <!--end navigation menu-->
             </div>
@@ -263,6 +106,90 @@
         </div>
         <!--end container-->
     </header>
+
+    <style>
+        /* Ajustement du logo avec espace en haut et en bas */
+        #topnav .logo img {
+            max-height: 50px;      /* réduit un peu la taille pour créer de l'espace */
+            width: auto;
+            display: block;
+            margin: 5px 0;         /* espace en haut et en bas */
+        }
+    
+        /* Centrer verticalement le logo dans le header */
+        #topnav .logo {
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+    
+        /* Assurer que tous les blocs features aient la même hauteur */
+        .row-eq-height {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        .row-eq-height > [class*='col-'] {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .core-feature {
+            flex: 1 1 auto; /* occupe tout l'espace disponible dans la colonne */
+        }
+    
+        .member-pic img {
+            width: 100%;
+            height: 300px; /* même hauteur pour tous */
+            object-fit: cover; /* recadre l'image sans la déformer */
+        }
+    
+        /* Conteneur cercle : centrage parfait */
+        .services .icon {
+        width: 72px;               /* diamètre, ajuste si besoin */
+        height: 72px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        background: rgba(47,85,212,0.06); /* léger fond, optionnel */
+        overflow: hidden;          /* évite voir un "carré" provenant de l'icône */
+        padding: 0;
+        }
+    
+        /* Forcer l'icône à ne pas avoir de fond ni bordures imposées par d'autres classes */
+        .services .icon .mdi {
+        display: block !important;     /* makes element a block for consistent sizing */
+        line-height: 1 !important;
+        font-size: 28px;               /* taille icône — ajuste si besoin */
+        width: auto;
+        height: auto;
+        background: transparent !important;
+        border-radius: 0 !important;
+        vertical-align: middle;
+        color: #2f55d4;                /* couleur icône (ton primaire) */
+        }
+    
+        /* Si Bootstrap ou le thème met des padding/margins sur .icon > i, on force à zéro */
+        .services .icon .mdi.h3,
+        .services .icon .mdi.d-flex,
+        .services .icon .mdi.mx-auto {
+        padding: 0 !important;
+        margin: 0 !important;
+        }
+    
+        /* Responsive */
+        @media (max-width: 576px) {
+        .services .icon { width: 56px; height: 56px; }
+        .services .icon .mdi { font-size: 22px; }
+        }
+    
+    
+    
+    
+    
+        </style>
     <!--end header-->
     <!-- Navbar End -->
 
@@ -274,15 +201,15 @@
                     <div class="row align-items-center">
                         <div class="col-12">
                             <div class="text-center">
-                                <h3 class="title-pager mb-0"> Get In Touch ! </h3>
+                                <h3 class="title-pager mb-0"> Nous contacter</h3>
                             </div>
-                            <ul class="page-next text-center mt-4 pt-2">
+                            <!-- <ul class="page-next text-center mt-4 pt-2">
                                 <li><a href="index.html" class="text-dark fs-6">Bizcell</a></li> 
                                 <li><a href="#" class="text-dark fs-6">Contact</a></li>                              
                                 <li>
                                     <span class="text-primary fs-6">Contact One</span>
                                 </li>
-                            </ul>
+                            </ul> -->
                         </div>
                         <!--end col-->
                     </div>
@@ -309,22 +236,22 @@
                                     <div id="simple-msg"></div>
                                     <div class="row">
                                         <div class="col-12 mb-3">
-                                            <h4 class="">Get In Touch !</h4>
+                                            <h4 class="">Nous contacter</h4>
                                             
                                         </div>
                                         <div class="col-md-6">
-                                            <label class="form-label fs-6 mt-3 mb-1">Your Name <span
+                                            <label class="form-label fs-6 mt-3 mb-1">Votre nom <span
                                                     class="text-danger">*</span></label>
                                             <div class="form-icon position-relative">
                                                 <i class="mdi mdi-account icon-sm icons"></i>
                                                 <input name="name" id="name" type="text" class="form-control ps-5 fs-6"
-                                                    placeholder="Name :">
+                                                    placeholder="Nom :">
                                             </div>
                                         </div>
 
                                         <div class="col-md-6">
 
-                                            <label class="form-label fs-6 mt-3 mb-1">Your Email <span
+                                            <label class="form-label fs-6 mt-3 mb-1">Votre email <span
                                                     class="text-danger">*</span></label>
                                             <div class="form-icon position-relative">
                                                 <i class="mdi mdi-email-outline icon-sm icons"></i>
@@ -336,17 +263,17 @@
                                         <!--end col-->
 
                                         <div class="col-12">
-                                            <label class="form-label fs-6 mt-3 mb-1">Subject</label>
+                                            <label class="form-label fs-6 mt-3 mb-1">Objet</label>
                                             <div class="form-icon position-relative">
                                                 <i class="mdi mdi-book-outline icon-sm icons"></i>
                                                 <input name="subject" id="subject" class="form-control ps-5 fs-6"
-                                                    placeholder="subject :">
+                                                    placeholder="objet :">
                                             </div>
                                         </div>
                                         <!--end col-->
 
                                         <div class="col-12">
-                                            <label class="form-label fs-6 mt-3 mb-1">Comments <span
+                                            <label class="form-label fs-6 mt-3 mb-1">Message <span
                                                     class="text-danger">*</span></label>
                                             <div class="form-icon position-relative">
                                                 <i class="mdi mdi-message-outline icon-sm icons"></i>
@@ -358,8 +285,7 @@
                                     <!-- end row -->
                                     <div class="row">
                                         <div class="col-12 fs-6 mt-3">
-                                            <button type="submit" id="submit" name="send" class="btn btn-primary">Send
-                                                Message</button>
+                                            <button type="submit" id="submit" name="send" class="btn btn-primary">Envoyer</button>
                                         </div>
                                         <!--end col-->
                                     </div>
@@ -376,27 +302,26 @@
 
                 <div class="col-lg-6 col-md-6 order-1 order-md-2 mt-3 pt-2">
                     <div class="title-heading ms-lg-4">
-                        <h4 class="title text-capitalize">Ready to work with us ?</h4>
-                        <p class="para-desc text-muted mx-auto">We are so excited and proud of our business. It's
-                            really easy to create a landing page for your awesome business.</p>
+                        <h4 class="title text-capitalize">Prêt à collaborer avec nous ?</h4>
+                        <p class="para-desc text-muted mx-auto">Vous avez un projet ou une idée à concrétiser ? Notre équipe est là pour vous accompagner à chaque étape et vous fournir des solutions innovantes et sur mesure.</p>
                         <div class="d-flex contact-detail align-items-center mt-3 pt-2">
                             <div class="icon float-start me-4">
                                 <i class="mdi mdi-email text-primary d-block rounded-pill h3 mb-0"></i>
                             </div>
                             <div class="flex-1 content">
                                 <h5 class="title fw-bold mb-1">Email</h5>
-                                <p class="mb-0 text-muted"><span class="fw-bold">E-mail :</span> sample@yourdomain.com
-                                </p>                                
+                                <p class="mb-0 text-muted"><span class="fw-bold">Contactez-nous :</span> atlasgisbj@gmail.com</p>                                
                             </div>
                         </div>
+
 
                         <div class="d-flex contact-detail align-items-center mt-3 pt-2">
                             <div class="icon float-start me-4">
                                 <i class="mdi mdi-phone text-primary d-block rounded-pill h3 mb-0"></i>
                             </div>
                             <div class="flex-1 content">
-                                <h5 class="title fw-bold mb-1">Call Now</h5>
-                                <p class="mb-0 text-muted"><span class="fw-bold">Phone :</span> +1 9849-657-847
+                                <h5 class="title fw-bold mb-1">Appelez maintenant !</h5>
+                                <p class="mb-0 text-muted"><span class="fw-bold">Téléphone :</span> +229 01 97 11 28 28
                                 </p>
                             </div>
                         </div>
@@ -406,9 +331,8 @@
                                 <i class="mdi mdi-map-marker text-primary d-block rounded-pill h3 mb-0"></i>
                             </div>
                             <div class="flex-1 content">
-                                <h5 class="title fw-bold mb-1">Where To Find</h5>
-                                <p class="mb-0 text-muted"><span class="fw-bold">Address :</span> 245 S Last Street Ave,
-                                    Washington, CA 90022, USA</p>
+                                <h5 class="title fw-bold mb-1">Où nous trouver ?</h5>
+                                <p class="mb-0 text-muted"><span class="fw-bold">Adresse :</span> Cotonou Carrefour Cossi / Feux de signalisation, Cotonou, Bénin</p>
                             </div>
                         </div>
                     </div>
@@ -423,9 +347,7 @@
             <div class="row">
                 <div class="col-lg-12 p-0">
                     <div class="map contact-map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26450.703875827203!2d-118.17714508359843!3d34.035200272995354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2cf71ad83ff9f%3A0x518b28657f4543b7!2sEast+Los+Angeles%2C+CA%2C+USA!5e0!3m2!1sen!2smx!4v1558185841201!5m2!1sen!2smx"
-                            width="600" height="450" style="border:0" allowfullscreen></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3386.9411004969484!2d2.413869!3d6.368244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMjInMDUuNyJOIDLCsDI0JzQ5LjkiRQ!5e1!3m2!1sfr!2sbj!4v1762689155644!5m2!1sfr!2sbj" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
                 <!--end col-->
@@ -491,76 +413,57 @@
     <footer class="footer bg-dark">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
+                <!-- Logo et description -->
+                <div class="col-lg-4 col-12 mb-4 pb-2">
                     <a href="#" class="logo-footer">
-                        <img src="images/logo-light.png" height="24" alt="">
+                        <img src="images/logo-at.png" height="24" alt="ATLAS-GIS">
                     </a>
-                    <p class="mt-4 text-white-50">Using this template you can make beautiful landing pages without any
-                        major hardwork.</p>
-
-                   <div class="mt-3">
+                    <p class="mt-4 text-white-50">
+                        Cabinet ATLAS-GIS : expertise en topographie, cartographie et gestion de projets géospatiaux.
+                    </p>
+                    <div class="mt-3">
                         <ul class="list-unstyled footer-icon social mb-0">
-                            <li class="list-inline-item mb-0"><a href="#" class="rounded icon-sm"><i
-                                        data-feather="facebook" class="fea icon-sm"></i></a></li>
-                            <li class="list-inline-item mb-0"><a href="#" class="rounded icon-sm"><i
-                                        data-feather="instagram" class="fea icon-sm"></i></a></li>
-                            <li class="list-inline-item mb-0"><a href="#" class="rounded icon-sm"><i
-                                        data-feather="twitter" class="fea icon-sm"></i></a></li>
-                            <li class="list-inline-item mb-0"><a href="#" class="rounded icon-sm"><i
-                                        data-feather="linkedin" class="fea icon-sm"></i></a></li>
-                            <li class="list-inline-item mb-0"><a href="#" class="rounded icon-sm"><i
-                                        data-feather="dribbble" class="fea icon-sm"></i></a></li>
+                            <li class="list-inline-item mb-0"><a href="#" class="rounded icon-sm"><i data-feather="facebook" class="fea icon-sm"></i></a></li>
+                            <li class="list-inline-item mb-0"><a href="#" class="rounded icon-sm"><i data-feather="instagram" class="fea icon-sm"></i></a></li>
+                            <li class="list-inline-item mb-0"><a href="#" class="rounded icon-sm"><i data-feather="twitter" class="fea icon-sm"></i></a></li>
+                            <li class="list-inline-item mb-0"><a href="#" class="rounded icon-sm"><i data-feather="linkedin" class="fea icon-sm"></i></a></li>
                         </ul>
                     </div>
                 </div>
-                <!--end col-->
-
+    
+                <!-- Liens de l'entreprise -->
                 <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                    <h4 class="text-light footer-head">Company</h4>
+                    <h4 class="text-light footer-head">À propos</h4>
                     <ul class="list-unstyled footer-list mt-4">
-                        <li><a href="#" class="text-foot fs-6"><i class="mdi mdi-chevron-right"></i> Aboutus</a></li>
+                        <li><a href="#" class="text-foot fs-6"><i class="mdi mdi-chevron-right"></i> Notre Cabinet</a></li>
                         <li><a href="#" class="text-foot fs-6"><i class="mdi mdi-chevron-right"></i> Services</a></li>
-                        <li><a href="#" class="text-foot fs-6"><i class="mdi mdi-chevron-right"></i> Team</a></li>
-                        <li><a href="#" class="text-foot fs-6"><i class="mdi mdi-chevron-right"></i> Pricing</a></li>
-                        <li><a href="#" class="text-foot fs-6"><i class="mdi mdi-chevron-right"></i> Features</a></li>
+                        <li><a href="#" class="text-foot fs-6"><i class="mdi mdi-chevron-right"></i> Équipe</a></li>
                     </ul>
                 </div>
-                <!--end col-->
-
+    
+                <!-- Liens utiles -->
                 <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                    <h4 class="text-light footer-head">Usefull Links</h4>
+                    <h4 class="text-light footer-head">Liens utiles</h4>
                     <ul class="list-unstyled footer-list mt-4">
-                        <li><a href="#" class="text-foot fs-6"><i class="mdi mdi-chevron-right"></i> Privacy
-                                Protection</a></li>
-                        <li><a href="#" class="text-foot fs-6"><i class="mdi mdi-chevron-right"></i> Safe Payments</a>
-                        </li>
-                        <li><a href="#" class="text-foot fs-6"><i class="mdi mdi-chevron-right"></i> Terms of
-                                Services</a></li>
-                        <li><a href="#" class="text-foot fs-6"><i class="mdi mdi-chevron-right"></i> Documentation</a>
-                        </li>
-                        <li><a href="#" class="text-foot fs-6"><i class="mdi mdi-chevron-right"></i> Privacy Policy</a>
-                        </li>
+                        <li><a href="#" class="text-foot fs-6"><i class="mdi mdi-chevron-right"></i> Conditions d’utilisation</a></li>
+                        <li><a href="#" class="text-foot fs-6"><i class="mdi mdi-chevron-right"></i> Politique de confidentialité</a></li>
                     </ul>
                 </div>
-                <!--end col-->
-
+    
+                <!-- Coordonnées -->
                 <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                    <h4 class="text-light fw-normal footer-head mb-4">Bizcell Store</h4>
+                    <h4 class="text-light fw-normal footer-head mb-4">Contact</h4>
                     <ul class="list-unstyled footer-list">
-                        <li class="fs-6"><i class="mdi mdi-map-marker me-2"></i> 3/2/64 Mongus Street, UK</li>
-                        <li class="fs-6"><i class="mdi mdi-email me-2"></i> name@domain.com</li>
-                        <li class="fs-6"><i class="mdi mdi-phone me-2"></i> +(125) 215-4561</li>
-                        <li class="fs-6"><i class="mdi mdi-earth me-2"></i> www.yourdomain.com</li>
-                        <li class="fs-6"><i class="mdi mdi-twitter me-2"></i> yourname_tweet</li>
+                        <li class="fs-6"><i class="mdi mdi-map-marker me-2"></i> Cotonou Carrefour Cossi / Feux de signalisation, Cotonou, Bénin</li>
+                        <li class="fs-6"><i class="mdi mdi-email me-2"></i> atlasgisbj@gmail.com</li>
+                        <li class="fs-6"><i class="mdi mdi-phone me-2"></i> +229 01 97 11 28 28</li>
+                        <li class="fs-6"><i class="mdi mdi-earth me-2"></i> www.atlasgis.bj</li>
                     </ul>
-
                 </div>
-                <!--end col-->
             </div>
-            <!--end row-->
         </div>
-        <!--end container-->
     </footer>
+    
     <!--end footer-->
 
     <footer class="footer footer-bar bg-dark border-top">
@@ -570,25 +473,8 @@
                     <div class="text-sm-start">
                         <p class="mb-0">© <script>
                                 document.write(new Date().getFullYear())
-                            </script> Bizcell. Design with <i class="mdi mdi-heart text-danger"></i> by <a
-                                href="https://shreethemes.in/" target="_blank" class="text-reset">Shreethemes</a>.</p>
+                            </script> ATLAS GIS SARL</p>
                     </div>
-                </div>
-                <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                    <ul class="list-unstyled text-sm-end mb-0">
-                        <li class="list-inline-item"><a href="javascript:void(0)"><img
-                                    src="images/footer/american-ex.png" class="avatar avatar-ex-sm"
-                                    title="American Express" alt=""></a></li>
-                        <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/footer/discover.png"
-                                    class="avatar avatar-ex-sm" title="Discover" alt=""></a></li>
-                        <li class="list-inline-item"><a href="javascript:void(0)"><img
-                                    src="images/footer/master-card.png" class="avatar avatar-ex-sm" title="Master Card"
-                                    alt=""></a></li>
-                        <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/footer/paypal.png"
-                                    class="avatar avatar-ex-sm" title="Paypal" alt=""></a></li>
-                        <li class="list-inline-item"><a href="javascript:void(0)"><img src="images/footer/visa.png"
-                                    class="avatar avatar-ex-sm" title="Visa" alt=""></a></li>
-                    </ul>
                 </div>
                 <!--end col-->
 
@@ -634,10 +520,10 @@
                 </li>
             </ul>
         </div>
-        <div class="bottom">
+        <!-- <div class="bottom">
             <a href="javascript: void(0);" class="settings bg-white shadow d-block"><i
                     class="mdi mdi-cog ms-1 mdi-24px position-absolute mdi-spin text-primary"></i></a>
-        </div>
+        </div> -->
     </div>
     <!-- end Style switcher -->
 
