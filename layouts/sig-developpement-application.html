@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from shreethemes.in/bizcell/layouts/page-service-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Nov 2025 11:52:59 GMT -->
+<head>
+    <meta charset="utf-8" />
+    <title>ATLAS GIS - Cabinet de cartographie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium Bootstrap 5 Landing Page Template" />
+    <meta name="keywords" content="bootstrap 5, premium, marketing, multipurpose" />
+    <meta name="author" content="Shreethemes" />
+    <meta name="website" content="https://shreethemes.in/" />
+    <meta name="email" content="support@shreethemes.in" />
+    <meta name="version" content="1.0.0" />
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <!-- BOOTSTRAP -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- ICON -->
+    <link href="css/materialdesignicons.min.css" rel="stylesheet">
+    <link href="../../../unicons.iconscout.com/release/v4.0.0/css/line.css" rel="stylesheet">
+    <!-- SLIDER -->
+    <link rel="stylesheet" href="css/tiny-slider.css">
+    <!-- Custom Css -->
+    <link href="css/style.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+    <!-- Tiny Slider CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+
+    <style>
+        #service-cartographie {
+            width: 100%;
+            height: 100%;
+            background-size: cover !important;
+            background-position: center !important;
+        }
+
+        .service-images img {
+            transition: transform 0.5s ease;
+            cursor: pointer;
+        }
+
+        .service-images img:hover {
+            transform: scale(1.1); /* zoom 10% */
+        }
+
+        /* Ajustement du logo avec espace en haut et en bas */
+        #topnav .logo img {
+            max-height: 50px;      /* réduit un peu la taille pour créer de l'espace */
+            width: auto;
+            display: block;
+            margin: 5px 0;         /* espace en haut et en bas */
+        }
+
+        /* Centrer verticalement le logo dans le header */
+        #topnav .logo {
+            display: flex;
+            align-items: center;
+            height: 100%;
+        }
+
+        /* Conteneur cercle : centrage parfait */
+        .services .icon {
+        width: 72px;               /* diamètre, ajuste si besoin */
+        height: 72px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        background: rgba(47,85,212,0.06); /* léger fond, optionnel */
+        overflow: hidden;          /* évite voir un "carré" provenant de l'icône */
+        padding: 0;
+        }
+
+        /* Forcer l'icône à ne pas avoir de fond ni bordures imposées par d'autres classes */
+        .services .icon .mdi {
+        display: block !important;     /* makes element a block for consistent sizing */
+        line-height: 1 !important;
+        font-size: 28px;               /* taille icône — ajuste si besoin */
+        width: auto;
+        height: auto;
+        background: transparent !important;
+        border-radius: 0 !important;
+        vertical-align: middle;
+        color: #2f55d4;                /* couleur icône (ton primaire) */
+        }
+
+        /* Si Bootstrap ou le thème met des padding/margins sur .icon > i, on force à zéro */
+        .services .icon .mdi.h3,
+        .services .icon .mdi.d-flex,
+        .services .icon .mdi.mx-auto {
+        padding: 0 !important;
+        margin: 0 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div id="preloader">
+        <div id="status">
+            <div class="spinner">
+                <div class="cube1"></div>
+                <div class="cube2"></div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Navbar STart -->
+    <header id="topnav" class="defaultscroll sticky">
+        <div class="container">
+            <!-- Logo container-->
+            <a class="logo" href="index.html">
+                <span class="logo-light-mode">
+                    <img src="images/logo-at.png" class="l-dark" alt="ATLAS Logo">
+                    <img src="images/logo-at.png" class="l-light" alt="ATLAS Logo">
+                </span>
+                <img src="images/logo-at.png" class="logo-dark-mode" alt="ATLAS Logo">
+            </a>
+            <!-- End Logo container-->
+    
+            <div class="menu-extras">
+                <div class="menu-item">
+                    <!-- Mobile menu toggle-->
+                    <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+                        <div class="lines">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                    <!-- End mobile menu toggle-->
+                </div>
+            </div>
+    
+            <ul class="buy-button list-inline mb-0">
+                <li class="list-inline-item search-icon mb-0">
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-link text-decoration-none dropdown-toggle mb-0 p-0"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="uil uil-search h5 text-dark nav-light-icon-dark mb-0"></i>
+                            <i class="uil uil-search h5 text-white nav-light-icon-white mb-0"></i>
+                        </button>
+                        <div class="dropdown-menu dd-menu dropdown-menu-end bg-white shadow rounded border-0 mt-4 py-0"
+                            style="width: 300px;">
+                            <form class="p-4">
+                                <input type="text" id="text" name="name" class="form-control border bg-white"
+                                    placeholder="Search...">
+                            </form>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+    
+            <div id="navigation">
+                <!-- Navigation Menu-->
+                <ul class="navigation-menu nav-light nav-right">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li class="has-submenu parent-parent-menu-item">
+                        <a href="javascript:void(0)">Services</a><span class="menu-arrow"></span>
+                        <ul class="submenu">
+                          <li><a href="cartographie.html" class="sub-menu-item">Cartographie & Webmapping</a></li>
+                          <li><a href="#sig-dev" class="sub-menu-item">SIG & Développement d'applications</a></li>
+                          <li><a href="#drone" class="sub-menu-item">Drone & Télédétection</a></li>
+                          <li><a href="#foncier" class="sub-menu-item">Gestion des terres · Cadastre · SIF · Foncier</a></li>
+                          <li><a href="#topographie" class="sub-menu-item">Topographie & Génie civil</a></li>
+                          <li><a href="#collecte-donnees" class="sub-menu-item">Collecte de données (terrain)</a></li>
+                          <li><a href="#amenagement" class="sub-menu-item">Aménagement du territoire & Environnement</a></li>
+                          <li><a href="#eies-par" class="sub-menu-item">Étude d'Impact Environnemental & PAR</a></li>
+                          <li><a href="#imprimerie" class="sub-menu-item">Imprimerie (cartes, calques, papier)</a></li>
+                          <li><a href="#ventes" class="sub-menu-item">Ventes (GPS, GNSS & consommables)</a></li>
+                          <li><a href="#formations" class="sub-menu-item">Formations & accompagnement</a></li>
+                        </ul>
+                    </li>                      
+                    <li><a href="#">Projets</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="page-contact-one.html">Contact</a></li>
+                </ul>
+                <!--end navigation menu-->
+            </div>
+            <!--end navigation-->
+        </div>
+        <!--end container-->
+    </header>
+    <!--end header-->
+    <!-- Navbar End -->
+
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <section class="bg-default page-next-level" style="background: url(images/bg/bg-page.png) center no-repeat;">
+                    <div class="home-center">
+                        <div class="home-desc-center">
+                            <div class="container">
+                                <div class="row align-items-center">
+                                    <div class="col-12 text-center">
+                                        <h3 class="title-pager mb-0">SIG & Développement d’applications</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="section">
+                    <div class="container">
+                        <div class="row">               
+                            <!-- MAIN CONTENT -->
+                            <div class="col-lg-8 col-md-8 col-12">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="service-detail">
+                    
+                                            <!-- SLIDER IMAGES -->
+                                            <div class="img service-slider position-relative overflow-hidden rounded">
+                                                <div class="my-slider">
+                                                    <div class="service-images position-relative overflow-hidden rounded">
+                                                        <a href="images/service/01.jpg" target="_blank">
+                                                            <img src="images/service/01.jpg" class="img-fluid mx-auto rounded d-block" alt="SIG1">
+                                                        </a>
+                                                    </div>
+                                                    <div class="service-images position-relative overflow-hidden rounded">
+                                                        <a href="images/service/01.jpg" target="_blank">
+                                                            <img src="images/service/01.jpg" class="img-fluid mx-auto rounded d-block" alt="SIG2">
+                                                        </a>
+                                                    </div>
+                                                    <div class="service-images position-relative overflow-hidden rounded">
+                                                        <a href="images/service/01.jpg" target="_blank">
+                                                            <img src="images/service/01.jpg" class="img-fluid mx-auto rounded d-block" alt="SIG3">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                            <!-- CONTENU DU SERVICE -->
+                                            <div class="content mt-4">
+                                                <h4 class="title pb-3 border-bottom">SIG & Développement d’applications</h4>
+                    
+                                                <p class="text-muted">
+                                                    Atlas GIS propose des solutions SIG complètes et le développement d’applications sur mesure pour répondre aux besoins métiers. 
+                                                    Nous permettons aux entreprises, institutions et collectivités de gérer, analyser et exploiter efficacement leurs données géospatiales.
+                                                </p>
+                    
+                                                <p class="text-muted">
+                                                    Avec une maîtrise de <b>QGIS, PostGIS, Leaflet, OpenLayers, GeoServer, Symfony</b> et des technologies web modernes, nous réalisons des outils interactifs, dashboards et modules web adaptés à tout type de projet : suivi territorial, gestion foncière, analyses environnementales, planification urbaine ou optimisation logistique.
+                                                </p>
+                    
+                                                <blockquote class="blockquote">
+                                                    <p class="text-muted mb-0">
+                                                        « Nos solutions SIG et applications transforment vos données en décisions stratégiques et actions concrètes. »
+                                                    </p>
+                                                </blockquote>
+                    
+                                                <h5 class="mt-5 pb-2 border-bottom">Pourquoi choisir Atlas GIS ?</h5>
+                                                <ul class="text-muted">
+                                                    <li>Expertise sur les outils SIG et développement d’applications web géospatiales.</li>
+                                                    <li>Solutions sur mesure pour vos projets spécifiques et flux métiers.</li>
+                                                    <li>Interfaces interactives, intuitives et accessibles en ligne.</li>
+                                                    <li>Automatisation et intégration de vos bases de données géospatiales.</li>
+                                                    <li>Support technique, maintenance et évolutivité des solutions.</li>
+                                                </ul>
+                    
+                                                <blockquote class="blockquote mt-3">
+                                                    <p class="text-muted mb-0">
+                                                        « Avec Atlas GIS, vos données SIG deviennent un levier stratégique pour votre organisation. »
+                                                    </p>
+                                                </blockquote>
+                    
+                                                <h5 class="mt-5 pb-2 border-bottom">Notre méthodologie</h5>
+                                                <p class="text-muted">
+                                                    Chaque projet suit une approche structurée pour garantir fiabilité et performance :
+                                                </p>
+                                                <ol class="text-muted">
+                                                    <li><b>Analyse et cadrage :</b> Compréhension des besoins et définition des objectifs.</li>
+                                                    <li><b>Collecte et structuration :</b> Intégration et normalisation des données SIG.</li>
+                                                    <li><b>Développement :</b> Création d’applications web, dashboards et outils interactifs.</li>
+                                                    <li><b>Tests et validation :</b> Vérification des fonctionnalités, performance et ergonomie.</li>
+                                                    <li><b>Formation et accompagnement :</b> Documentation et transfert de compétences aux équipes.</li>
+                                                </ol>
+                    
+                                                <h5 class="mt-5 pb-2 border-bottom">Technologies et outils</h5>
+                                                <ul class="text-muted">
+                                                    <li><b>QGIS :</b> Analyses SIG avancées et cartographie thématique.</li>
+                                                    <li><b>PostGIS :</b> Gestion et requêtes spatiales sur bases de données PostgreSQL.</li>
+                                                    <li><b>Leaflet & OpenLayers :</b> Cartes web interactives et dashboards.</li>
+                                                    <li><b>GeoServer :</b> Publication de services WMS/WFS pour données géospatiales.</li>
+                                                    <li><b>Symfony :</b> Développement d’applications web sécurisées et sur mesure.</li>
+                                                </ul>
+                    
+                                                <h5 class="mt-5 pb-2 border-bottom">Valeur ajoutée</h5>
+                                                <ul class="text-muted">
+                                                    <li>Visualisation interactive des données pour prise de décision rapide.</li>
+                                                    <li>Optimisation et automatisation des flux SIG.</li>
+                                                    <li>Création d’outils sur mesure pour différents métiers et projets.</li>
+                                                    <li>Partage d’informations centralisé et sécurisé pour vos équipes.</li>
+                                                </ul>
+                    
+                                                <blockquote class="blockquote mt-3">
+                                                    <p class="text-muted mb-0">
+                                                        « Nos applications SIG transforment la complexité des données en solutions opérationnelles. »
+                                                    </p>
+                                                </blockquote>
+                    
+                                            </div>
+                    
+                                            <h5 class="mt-5 pb-3 border-bottom">Nos Services SIG & Développement</h5>
+                    
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-6 mt-4">
+                                                    <div class="services text-center p-4 h-100">
+                                                        <div class="icon bg-light text-primary d-flex align-items-center justify-content-center mx-auto rounded-circle" style="width:70px; height:70px; font-size:28px;">
+                                                            <i class="mdi mdi-database"></i>
+                                                        </div>
+                                                        <div class="content mt-3">
+                                                            <h5 class="text-dark mt-2">Bases de données SIG</h5>
+                                                            <p class="text-muted mt-2">Modélisation, intégration et optimisation des données géospatiales.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 mt-4">
+                                                    <div class="services text-center p-4 h-100">
+                                                        <div class="icon bg-light text-primary d-flex align-items-center justify-content-center mx-auto rounded-circle" style="width:70px; height:70px; font-size:28px;">
+                                                            <i class="mdi mdi-web"></i>
+                                                        </div>
+                                                        <div class="content mt-3">
+                                                            <h5 class="text-dark mt-2">Applications Web SIG</h5>
+                                                            <p class="text-muted mt-2">Développement d’outils interactifs avec Leaflet, OpenLayers et Symfony.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 mt-4">
+                                                    <div class="services text-center p-4 h-100">
+                                                        <div class="icon bg-light text-primary d-flex align-items-center justify-content-center mx-auto rounded-circle" style="width:70px; height:70px; font-size:28px;">
+                                                            <i class="mdi mdi-map"></i>
+                                                        </div>
+                                                        <div class="content mt-3">
+                                                            <h5 class="text-dark mt-2">Cartographie Interactive</h5>
+                                                            <p class="text-muted mt-2">Visualisation et analyse des données géospatiales via interfaces web.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-6 col-md-6 mt-4">
+                                                    <div class="services text-center p-4 h-100">
+                                                        <div class="icon bg-light text-primary d-flex align-items-center justify-content-center mx-auto rounded-circle" style="width:70px; height:70px; font-size:28px;">
+                                                            <i class="mdi mdi-layers-outline"></i>
+                                                        </div>
+                                                        <div class="content mt-3">
+                                                            <h5 class="text-dark mt-2">Analyse Spatiale Avancée</h5>
+                                                            <p class="text-muted mt-2">Traitements SIG pour aider à la décision et modélisation des territoires.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <!-- SIDEBAR -->
+                            <div class="col-lg-4 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                                <div class="sidebar p-4 rounded bg-light ms-lg-3">
+                                    <div class="widget mb-4">
+                                        <h5 class="pb-2 widget-title border-bottom">Tous nos services</h5>
+                                        <ul class="list-unstyled mt-4 mb-0 catagories">
+                                            <li><i class="mdi mdi-arrow-right me-1 fs-6"></i> <a href="#" class="text-dark">Cartographie & Webmapping</a></li>
+                                            <li><i class="mdi mdi-arrow-right me-1 fs-6"></i> <a href="#" class="text-dark">SIG & Développement d’applications</a></li>
+                                            <li><i class="mdi mdi-arrow-right me-1 fs-6"></i> <a href="#" class="text-dark">Drone & Télédétection</a></li>
+                                            <li><i class="mdi mdi-arrow-right me-1 fs-6"></i> <a href="#" class="text-dark">Gestion des terres et foncier</a></li>
+                                            <li><i class="mdi mdi-arrow-right me-1 fs-6"></i> <a href="#" class="text-dark">Topographie & Génie civil</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>                
+                        </div>
+                    </div>               
+                </section>
+                  
+            </div>
+        </div>
+    </section>
+    
+    
+    <!--end section-->
+    <!-- Partner End -->
+    <!-- Footer Start -->
+    <footer class="footer bg-dark">
+        <div class="container">
+            <div class="row">
+                <!-- Logo et description -->
+                <div class="col-lg-4 col-12 mb-4 pb-2">
+                    <a href="#" class="logo-footer">
+                        <img src="images/logo-at.png" height="24" alt="ATLAS-GIS">
+                    </a>
+                    <p class="mt-4 text-white-50">
+                        Cabinet ATLAS-GIS : expertise en topographie, cartographie et gestion de projets géospatiaux.
+                    </p>
+                    <div class="mt-3">
+                        <ul class="list-unstyled footer-icon social mb-0">
+                            <li class="list-inline-item mb-0"><a href="#" class="rounded icon-sm"><i data-feather="facebook" class="fea icon-sm"></i></a></li>
+                            <li class="list-inline-item mb-0"><a href="#" class="rounded icon-sm"><i data-feather="instagram" class="fea icon-sm"></i></a></li>
+                            <li class="list-inline-item mb-0"><a href="#" class="rounded icon-sm"><i data-feather="twitter" class="fea icon-sm"></i></a></li>
+                            <li class="list-inline-item mb-0"><a href="#" class="rounded icon-sm"><i data-feather="linkedin" class="fea icon-sm"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <!-- Liens de l'entreprise -->
+                <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <h4 class="text-light footer-head">À propos</h4>
+                    <ul class="list-unstyled footer-list mt-4">
+                        <li><a href="#" class="text-foot fs-6"><i class="mdi mdi-chevron-right"></i> Notre Cabinet</a></li>
+                        <li><a href="#" class="text-foot fs-6"><i class="mdi mdi-chevron-right"></i> Services</a></li>
+                        <li><a href="#" class="text-foot fs-6"><i class="mdi mdi-chevron-right"></i> Équipe</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Liens utiles -->
+                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <h4 class="text-light footer-head">Liens utiles</h4>
+                    <ul class="list-unstyled footer-list mt-4">
+                        <li><a href="#" class="text-foot fs-6"><i class="mdi mdi-chevron-right"></i> Conditions d’utilisation</a></li>
+                        <li><a href="#" class="text-foot fs-6"><i class="mdi mdi-chevron-right"></i> Politique de confidentialité</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Coordonnées -->
+                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                    <h4 class="text-light fw-normal footer-head mb-4">Contact</h4>
+                    <ul class="list-unstyled footer-list">
+                        <li class="fs-6"><i class="mdi mdi-map-marker me-2"></i> Cotonou Carrefour Cossi / Feux de signalisation, Cotonou, Bénin</li>
+                        <li class="fs-6"><i class="mdi mdi-email me-2"></i> atlasgisbj@gmail.com</li>
+                        <li class="fs-6"><i class="mdi mdi-phone me-2"></i> +229 01 97 11 28 28</li>
+                        <li class="fs-6"><i class="mdi mdi-earth me-2"></i> www.atlasgis.bj</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!--end footer-->
+
+    <footer class="footer footer-bar bg-dark border-top">
+        <div class="container text-center">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <div class="text-sm-start">
+                        <p class="mb-0">© <script>
+                                document.write(new Date().getFullYear())
+                            </script> ATLAS GIS SARL</p>
+                    </div>
+                </div>
+                <!--end col-->
+
+
+            </div>
+        </div>
+        <!--end container-->
+    </footer>
+    <!--end footer-->
+    <!-- Footer End -->
+
+    <!-- Style switcher -->
+    <div id="style-switcher" class="bg-light border p-3 pt-2 pb-2" onclick="toggleSwitcher()">
+        <div>
+            <h6 class="title text-center">Select Your Color</h6>
+            <ul class="pattern">
+                <li class="list-inline-item">
+                    <a class="color1" href="javascript: void(0);" onclick="setColor('default')"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="color2" href="javascript: void(0);" onclick="setColor('blue')"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="color3" href="javascript: void(0);" onclick="setColor('yellow')"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="color4" href="javascript: void(0);" onclick="setColor('dark-pink')"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="color5" href="javascript: void(0);" onclick="setColor('orange')"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="color6" href="javascript: void(0);" onclick="setColor('brown')"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="color7" href="javascript: void(0);" onclick="setColor('green')"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="color8" href="javascript: void(0);" onclick="setColor('purple')"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="color9" href="javascript: void(0);" onclick="setColor('firozi')"></a>
+                </li>
+            </ul>
+        </div>
+        <!-- <div class="bottom">
+            <a href="javascript: void(0);" class="settings bg-white shadow d-block"><i
+                    class="mdi mdi-cog ms-1 mdi-24px position-absolute mdi-spin text-primary"></i></a>
+        </div> -->
+    </div>
+    <!-- end Style switcher -->
+
+    <!-- Back to top -->
+    <a href="#" class="back-to-top rounded-pill text-center" id="back-to-top">
+        <i class="mdi mdi-chevron-up d-block"> </i>
+    </a>
+    <!-- Back to top -->
+
+    <!-- javascript -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Slider -->
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/tiny-slider-init.js"></script>
+    <!-- Switcher -->
+    <script src="js/switcher.js"></script>
+    <script src="js/feather.min.js"></script>
+    <!-- Main Js -->
+    <script src="js/plugins.init.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/easy_background.js"></script>
+
+    <!-- Tiny Slider JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+
+
+    <!-- <script>
+        easy_background("#service-cartographie", {
+            slide: [
+                "images/service/01.jpg",
+                "images/service/02.jpg",
+                "images/service/03.jpg"
+            ],
+            delay: [5000, 5000, 5000]
+        });
+    </script> -->
+
+    <script>
+        var slider = tns({
+            container: '.my-slider',
+            items: 1,
+            slideBy: 'page',
+            autoplay: true,
+            autoplayButtonOutput: false,
+            controls: false,
+            nav: true,
+            autoplayTimeout: 5000,
+            speed: 600,
+            gutter: 10,
+            loop: true,
+        });
+    </script>
+    
+    
+</body>
+
+
+<!-- Mirrored from shreethemes.in/bizcell/layouts/page-service-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Nov 2025 11:53:00 GMT -->
+</html>
